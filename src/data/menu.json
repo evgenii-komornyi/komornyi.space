@@ -1,0 +1,28 @@
+{
+    "card": [
+        {
+            "id": 1,
+            "title": "About me"
+        },
+        {
+            "id": 2,
+            "title": "Skills"
+        },
+        {
+            "id": 3,
+            "title": "Experience"
+        },
+        {
+            "id": 4,
+            "title": "Education"
+        },
+        {
+            "id": 5,
+            "title": "Fun Stuff"
+        },
+        {
+            "id": 6,
+            "title": "Contacts"
+        }
+    ]
+}
