@@ -1,0 +1,24 @@
+{
+    "hobbies": [
+        {
+            "id": 1,
+            "imageUrl": "http://127.0.0.1:8887/bike.png"
+        },
+        {
+            "id": 2,
+            "imageUrl": "http://127.0.0.1:8887/chess.png"
+        },
+        {
+            "id": 3,
+            "imageUrl": "http://127.0.0.1:8887/drumming.png"
+        },
+        {
+            "id": 4,
+            "imageUrl": "http://127.0.0.1:8887/gaming.png"
+        },
+        {
+            "id": 5,
+            "imageUrl": "http://127.0.0.1:8887/traveling.png"
+        }
+    ]
+}

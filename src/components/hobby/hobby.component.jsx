@@ -3,6 +3,8 @@ import { Row, Col } from 'reactstrap';
 
 import './hobby.style.sass';
 
+import Carousel from '../carousel/carousel.component';
+
 const Hobby = () => {
     return (
         <>
@@ -12,7 +14,9 @@ const Hobby = () => {
                 </Col>
             </Row>
             <Row>
-                <Col></Col>
+                <Col>
+                    <Carousel />
+                </Col>
             </Row>
         </>
     );
