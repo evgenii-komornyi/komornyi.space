@@ -1,0 +1,44 @@
+@import '../../sass/parts/_variables'
+
+.library
+    text-align: center
+    margin-top: 20px
+
+    .progress
+        position: absolute
+        width: 40px
+        height: 40px
+        right: 80px
+        top: 5px
+        text-align: center
+        border-radius: 50%
+        background: rgba($Black, .5)
+        color: $Snow
+
+        &.in-progress
+            color: $DodgerBlue
+            padding: 10px 11px
+
+        &.complete
+            color: $Lime
+            padding: 8px
+
+        &.pending
+            color: $Yellow
+            padding: 8px 10px
+
+    img.bookImage
+        width: 50%
+        height: 180px
+        +box-shadow(0, 0, 20px, rgba($Black, .8))
+
+    .bookTitle
+        font-size: 16px
+        margin-top: 10px
+
+    .bookAuthor
+        span
+            font-weight: bold
+
+.filter
+    margin-bottom: 20px

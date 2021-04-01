@@ -1,7 +1,10 @@
 @import 'parts/fonts'
+@import 'parts/color'
 
 @import '../components/header/header.style'
-@import '../components/grid/grid.style'
+@import '../components/about/about.style'
+@import '../components/books/books.style'
+@import '../components/hobby/hobby.style'
 
 *
     box-sizing: border-box
@@ -12,4 +15,16 @@ body
     font-family: $bodyFont
     padding: 0
     margin: 0
+    background: $Gainsboro
+
+h1
+    font-size: 20px
+    width: 50%
+    border-bottom: 1px solid #000
+    margin-top: 50px
+    margin-bottom: 30px
+
+    &::first-letter
+        font-weight: bold
+        color: $LimeGreen
 

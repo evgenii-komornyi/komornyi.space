@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Logo from '../../img/logo.png';
+
 const Header = () => {
     return (
         <header className="header">
             <nav className="navbar">
-                <a className="brand" href="#">
-                    Brand
+                <a className="brand" href="/">
+                    <img src={Logo} alt="" />
                 </a>
                 <input type="checkbox" id="nav" className="hidden" />
                 <label htmlFor="nav" className="nav-toggle">
@@ -27,11 +29,6 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" to="/contacts">
-                                contacts
-                            </NavLink>
-                        </li>
-                        <li className="menu-item">
                             <NavLink activeClassName="active" to="/cv">
                                 cv
                             </NavLink>
@@ -39,6 +36,11 @@ const Header = () => {
                         <li className="menu-item">
                             <NavLink activeClassName="active" to="/projects">
                                 projects
+                            </NavLink>
+                        </li>
+                        <li className="menu-item">
+                            <NavLink activeClassName="active" to="/contacts">
+                                contacts
                             </NavLink>
                         </li>
                     </ul>

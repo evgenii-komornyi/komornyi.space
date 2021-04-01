@@ -7,6 +7,7 @@ import AboutMePage from './pages/about-me.jsx';
 import ContactsPage from './pages/contacts';
 import CVPage from './pages/cv';
 import ProjectsPage from './pages/projects';
+import BooksPage from './pages/books';
 
 import Header from './components/header/header.component';
 
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/contacts" component={ContactsPage} />
                 <Route exact path="/cv" component={CVPage} />
                 <Route exact path="/projects" component={ProjectsPage} />
+                <Route exact path="/library" component={BooksPage} />
             </Switch>
         </>
     );

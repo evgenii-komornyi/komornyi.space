@@ -1,0 +1,298 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "House of Small Shadows",
+            "author": "Adam Nevill",
+            "image": "https://data.fantlab.ru/images/editions/big/309883?r=1613463136",
+            "progress": "complete",
+            "year": 2021
+        },
+        {
+            "id": 2,
+            "title": "The Monstrumologist",
+            "author": "Rick Yancey",
+            "image": "https://img.thriftbooks.com/api/images/l/e4e77847c2eb6808bcba9b6f82103e3289af6fde.jpg",
+            "progress": "complete",
+            "year": 2021
+        },
+        {
+            "id": 3,
+            "title": "The Monstrumologist: The Curse of the Wendigo",
+            "author": "Rick Yancey",
+            "image": "https://img.thriftbooks.com/api/images/l/420f56e94851c06594e2e85e56bc60478e385ab1.jpg",
+            "progress": "complete",
+            "year": 2021
+        },
+        {
+            "id": 4,
+            "title": "The Monstrumologist: The Isle of Blood",
+            "author": "Rick Yancey",
+            "image": "https://img.thriftbooks.com/api/images/l/2b832aab3c57ee731a36e52b226693c8178daef3.jpg",
+            "progress": "complete",
+            "year": 2021
+        },
+        {
+            "id": 6,
+            "title": "The Monstrumologist: The Final Descent",
+            "author": "Rick Yancey",
+            "image": "https://img.thriftbooks.com/api/images/l/741d6b5fe02368c6377f8c93ee726376b338622c.jpg",
+            "progress": "complete",
+            "year": 2021
+        },
+        {
+            "id": 7,
+            "title": "Wimpy Steve Book 1: Trapped in Minecraft!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1836/39/65/41/7.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 8,
+            "title": "Wimpy Steve Book 2: Horsing Around!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/39/97/01/7.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 9,
+            "title": "Wimpy Steve Book 3: A Ruff Adventure!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/41/63/82/0.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 10,
+            "title": "Wimpy Steve Book 4: Lots of Ocelots!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/43/85/42/1.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 11,
+            "title": "Wimpy Steve Book 5: A Bad Hare Day!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/44/94/11/5.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 12,
+            "title": "Wimpy Steve Book 6: Minecraft Mysteries!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/45/62/27/1.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 13,
+            "title": "Wimpy Steve Book 7: Baffled and Bewitched!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/46/48/17/2.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 14,
+            "title": "Wimpy Steve Book 8: Snow Much Fun!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/68/26/78/7.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 15,
+            "title": "Wimpy Steve Book 9: Portal Panic!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/53/23/62/5.jpeg",
+            "progress": "complete",
+            "year": 2019
+        },
+        {
+            "id": 16,
+            "title": "Wimpy Steve Book 10: Ocean Commotion!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/54/38/31/4.jpg",
+            "progress": "complete",
+            "year": 2019
+        },
+        {
+            "id": 17,
+            "title": "Wimpy Steve Book 11: Mansion Mayhem!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/55/91/74/0.jpeg",
+            "progress": "complete",
+            "year": 2019
+        },
+        {
+            "id": 18,
+            "title": "Wimpy Steve Book 12: Eyes on the Prize!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/57/70/95/0.jpg",
+            "progress": "complete",
+            "year": 2019
+        },
+        {
+            "id": 19,
+            "title": "Wimpy Steve Book 13: Stronghold Surprise!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/68/62/37/3.jpeg",
+            "progress": "complete",
+            "year": 2020
+        },
+        {
+            "id": 20,
+            "title": "Wimpy Steve Book 14: The End!",
+            "author": "Wimpy Steve",
+            "image": "https://www.bookvoed.ru/files/1377/79/62/37/5.jpeg",
+            "progress": "complete",
+            "year": 2020
+        },
+        {
+            "id": 21,
+            "title": "Defense Against the Dark Arts: Fundamentals of Magical Thinking",
+            "author": "Alexandr Panchin",
+            "image": "https://www.bookvoed.ru/files/1377/64/30/42/2.jpeg",
+            "progress": "complete",
+            "year": 2020
+        },
+        {
+            "id": 22,
+            "title": "Apofeniya",
+            "author": "Alexandr Panchin",
+            "image": "https://www.bookvoed.ru/files/1377/58/38/43/2.jpg",
+            "progress": "complete",
+            "year": 2020
+        },
+        {
+            "id": 23,
+            "title": "Elixirs Satan",
+            "author": "Gofman Ernst Teodor Amadey",
+            "image": "https://www.bookvoed.ru/files/1377/34/95/56/9.jpeg",
+            "progress": "complete",
+            "year": 2020
+        },
+        {
+            "id": 24,
+            "title": "Malleus Maleficarum - The Witch Hammer",
+            "author": "Jacob Sprenger, Heinrich Kramer",
+            "image": "https://www.bookvoed.ru/files/1377/43/95/59/5.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 25,
+            "title": "Lovecraft - Small Collected Works",
+            "author": "Howard Phillips Lovecraft",
+            "image": "https://www.bookvoed.ru/files/1377/24/99/98/3.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 26,
+            "title": "Edgar Allan Poe - Small Collected Works",
+            "author": "Edgar Allan Poe",
+            "image": "https://www.bookvoed.ru/files/1377/30/55/24/7.jpg",
+            "progress": "complete",
+            "year": 2015
+        },
+        {
+            "id": 27,
+            "title": "The Divine Comedy",
+            "author": "Dante Alighieri",
+            "image": "https://www.bookvoed.ru/files/1377/36/65/94/3.jpeg",
+            "progress": "complete",
+            "year": 2018
+        },
+        {
+            "id": 28,
+            "title": "Ancient Egyptian Legends",
+            "author": "Margaret Murray",
+            "image": "https://www.bookvoed.ru/files/1377/21/48/23.jpeg",
+            "progress": "complete",
+            "year": 2010
+        },
+        {
+            "id": 29,
+            "title": "A New Book of Horrors",
+            "author": "More than 10 authors",
+            "image": "https://www.bookvoed.ru/files/1836/40/07/97/7.jpeg",
+            "progress": "in-progress"
+        },
+        {
+            "id": 30,
+            "title": "Original Fairy Tales Brothers Grimm",
+            "author": "Jacob and Wilhelm Grimm",
+            "image": "https://img2.labirint.ru/rcimg/78d8a51a425a04d904d5ca89e39360a8/1920x1080/books63/621874/ph_001.jpg?1617092703",
+            "progress": "pending"
+        },
+        {
+            "id": 31,
+            "title": "Gravity Falls. Time Pirate Treasures",
+            "author": "Dipper and Mabel",
+            "image": "https://www.bookvoed.ru/files/1377/33/52/62/7.png",
+            "progress": "in-progress"
+        },
+        {
+            "id": 32,
+            "title": "The Lost Gods",
+            "author": "Brom",
+            "image": "https://www.bookvoed.ru/files/1377/41/67/86/1.jpg",
+            "progress": "pending"
+        },
+        {
+            "id": 33,
+            "title": "Souls Collector",
+            "author": "More than 10 authors",
+            "image": "https://www.bookvoed.ru/files/1377/25/56/43/3.jpeg",
+            "progress": "pending"
+        },
+        {
+            "id": 34,
+            "title": "Season of Blood",
+            "author": "Greg F. Gifune",
+            "image": "https://www.bookvoed.ru/files/1377/56/41/51/4.jpg",
+            "progress": "pending"
+        },
+        {
+            "id": 35,
+            "title": "Stratagem",
+            "author": "Harro von Zenger",
+            "image": "https://www.bookvoed.ru/files/1377/32/52/63/4.jpeg",
+            "progress": "in-progress"
+        },
+        {
+            "id": 36,
+            "title": "Hidden Reality",
+            "author": "Brian Greene",
+            "image": "https://www.bookvoed.ru/files/1377/25/63/66/5.jpg",
+            "progress": "pending"
+        },
+        {
+            "id": 37,
+            "title": "Elegant Universe",
+            "author": "Brian Greene",
+            "image": "https://www.bookvoed.ru/files/1377/59/21/85/9.jpg",
+            "progress": "pending"
+        },
+        {
+            "id": 38,
+            "title": "The Fabric of the Cosmos",
+            "author": "Brian Greene",
+            "image": "https://www.bookvoed.ru/files/1377/25/63/65/9.gif",
+            "progress": "pending"
+        },
+        {
+            "id": 39,
+            "title": "Clean Code",
+            "author": "Robert Martin",
+            "image": "https://www.bookvoed.ru/files/1377/52/18/79/6.jpeg",
+            "progress": "complete",
+            "year": 2020
+        }
+    ]
+}

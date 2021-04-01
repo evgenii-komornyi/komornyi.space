@@ -2,7 +2,6 @@ import React from 'react';
 import { card } from '../../data/menu.json';
 
 const Grid = () => {
-    console.log(card);
     return (
         <div className="grid">
             <div className="items">
