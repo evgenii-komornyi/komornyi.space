@@ -3,11 +3,12 @@ import React from 'react';
 import './carousel.style.sass';
 
 const Slide = ({ currentIndex, slides, onClick }) => {
-    const arrLength = slides.hobbies.length;
+    const { hobbies } = slides;
+    const arrLength = hobbies.length;
 
     return (
         <>
-            {slides.hobbies.map((slide, index) => {
+            {hobbies.map((slide, index) => {
                 const classMapper = {
                     [(currentIndex - 2 + arrLength) %
                     arrLength]: 'Carousel-slide--previous',
@@ -24,6 +25,15 @@ const Slide = ({ currentIndex, slides, onClick }) => {
                         className={`Carousel-slide ${classMapper[index]}`}
                         onClick={() => onClick(index)}
                     >
+                        {slide.content && (
+                            <div className="content">
+                                <div className="title">
+                                    {slide.content.title}
+                                </div>
+                                <div className="description"></div>
+                                <div className="link"></div>
+                            </div>
+                        )}
                         <img src={slide.imageUrl} alt="" />
                     </div>
                 );

@@ -8,19 +8,19 @@ import slides from '../../data/hobbies.json';
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const { hobbies } = slides;
+    const hobbiesLength = hobbies.length;
 
     const goToSlide = index => {
         setCurrentIndex(index);
     };
 
     const prevSlide = () => {
-        setCurrentIndex(
-            (currentIndex - 1 + slides.hobbies.length) % slides.hobbies.length
-        );
+        setCurrentIndex((currentIndex - 1 + hobbiesLength) % hobbiesLength);
     };
 
     const nextSlide = () => {
-        setCurrentIndex((currentIndex + 1) % slides.hobbies.length);
+        setCurrentIndex((currentIndex + 1) % hobbiesLength);
     };
 
     return (

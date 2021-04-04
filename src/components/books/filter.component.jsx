@@ -12,59 +12,55 @@ import {
 import Progress from './progress.component';
 
 const Filter = ({ data, filter }) => {
+    const progressUnique = new Set();
+    data.books.map(book => progressUnique.add(book.progress));
+
+    const yearsUnique = new Set();
+    data.books.map(
+        book =>
+            book.year &&
+            yearsUnique.add(book.year > 2016 ? book.year : 'earlier')
+    );
+
+    const handleProgress = e => {
+        e.preventDefault();
+        setBooks(filterBooks(e.target.dataset.progress));
+    };
+
+    const handleYear = e => {
+        e.preventDefault();
+        const { progress, year } = e.target.dataset;
+        setBooks(filterBooks(progress, +year));
+    };
+
+    const filterBooks = (progress, year = null) => {
+        return year < 2016 && year !== null
+            ? data.books.filter(
+                  book => book.progress === progress && book.year < 2016
+              )
+            : data.books.filter(book =>
+                  year === null
+                      ? book.progress === progress
+                      : book.progress === progress && book.year === year
+              );
+    };
+
     const filteredBooks = data.books.filter(book => book.id <= filter);
 
     const [books, setBooks] = useState(
         filter === -1 ? data.books : filteredBooks
     );
 
-    // Progress filter
-
     const [isProgOpen, setProgOpen] = useState(false);
     const toggleProgress = () => setProgOpen(!isProgOpen);
-
-    const completeBooks = data.books.filter(
-        book => book.progress === 'complete'
-    );
-
-    const inProgressBooks = data.books.filter(
-        book => book.progress === 'in-progress'
-    );
-
-    const pendingBooks = data.books.filter(book => book.progress === 'pending');
-
-    // Years filter
 
     const [isYearsOpen, setYearsOpen] = useState(false);
     const toggleYears = () => setYearsOpen(!isYearsOpen);
 
-    const twentyFirstYear = data.books.filter(
-        book => book.progress === 'complete' && book.year === 2021
-    );
-
-    const twentiethYear = data.books.filter(
-        book => book.progress === 'complete' && book.year === 2020
-    );
-
-    const nineteenthYear = data.books.filter(
-        book => book.progress === 'complete' && book.year === 2019
-    );
-
-    const eighteenthYear = data.books.filter(
-        book => book.progress === 'complete' && book.year === 2018
-    );
-
-    const otherYear = data.books.filter(
-        book =>
-            book.progress === 'complete' &&
-            book.year >= 2006 &&
-            book.year <= 2017
-    );
-
     return (
         <>
             <Row>
-                {filter !== 4 && (
+                {filter === -1 && (
                     <>
                         <Col className="text-left">Categories</Col>
                         <Col className="text-right">
@@ -82,7 +78,7 @@ const Filter = ({ data, filter }) => {
                                         By progress
                                     </DropdownToggle>
                                     <DropdownMenu>
-                                        <DropdownItem>
+                                        <DropdownItem tag="a">
                                             <Button
                                                 color="link"
                                                 onClick={() =>
@@ -92,36 +88,24 @@ const Filter = ({ data, filter }) => {
                                                 All
                                             </Button>
                                         </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(completeBooks)
-                                                }
-                                            >
-                                                Complete
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(inProgressBooks)
-                                                }
-                                            >
-                                                In progress
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(pendingBooks)
-                                                }
-                                            >
-                                                Pending
-                                            </Button>
-                                        </DropdownItem>
+                                        {[...progressUnique].map(
+                                            (progress, index) => (
+                                                <DropdownItem
+                                                    key={index}
+                                                    tag="a"
+                                                >
+                                                    <Button
+                                                        color="link"
+                                                        data-progress={progress}
+                                                        onClick={e =>
+                                                            handleProgress(e)
+                                                        }
+                                                    >
+                                                        {progress}
+                                                    </Button>
+                                                </DropdownItem>
+                                            )
+                                        )}{' '}
                                     </DropdownMenu>
                                 </ButtonDropdown>
                                 <ButtonDropdown
@@ -137,57 +121,7 @@ const Filter = ({ data, filter }) => {
                                         By Years
                                     </DropdownToggle>
                                     <DropdownMenu>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(twentyFirstYear)
-                                                }
-                                            >
-                                                2021
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(twentiethYear)
-                                                }
-                                            >
-                                                2020
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(nineteenthYear)
-                                                }
-                                            >
-                                                2019
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(eighteenthYear)
-                                                }
-                                            >
-                                                2018
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <Button
-                                                color="link"
-                                                onClick={() =>
-                                                    setBooks(otherYear)
-                                                }
-                                            >
-                                                Other years
-                                            </Button>
-                                        </DropdownItem>
-                                        <DropdownItem>
+                                        <DropdownItem tag="a">
                                             <Button
                                                 color="link"
                                                 onClick={() =>
@@ -197,6 +131,29 @@ const Filter = ({ data, filter }) => {
                                                 All
                                             </Button>
                                         </DropdownItem>
+                                        {[...yearsUnique]
+                                            .sort((a, b) => b - a)
+                                            .map((year, index) => (
+                                                <DropdownItem
+                                                    key={index}
+                                                    tag="a"
+                                                >
+                                                    <Button
+                                                        color="link"
+                                                        data-progress="complete"
+                                                        data-year={
+                                                            year === 'earlier'
+                                                                ? 2015
+                                                                : year
+                                                        }
+                                                        onClick={e =>
+                                                            handleYear(e)
+                                                        }
+                                                    >
+                                                        {year}
+                                                    </Button>
+                                                </DropdownItem>
+                                            ))}
                                     </DropdownMenu>
                                 </ButtonDropdown>
                             </div>
