@@ -8,7 +8,6 @@ import Hobby from '../components/hobby/hobby.component';
 const AboutMePage = () => (
     <Container>
         <About />
-        <Books filter={4} />
         <Hobby />
     </Container>
 );

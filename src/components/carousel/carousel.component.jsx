@@ -4,6 +4,10 @@ import './carousel.style.sass';
 
 import Slide from './slide.component';
 
+import { Button } from 'reactstrap';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import slides from '../../data/hobbies.json';
 
 const Carousel = () => {
@@ -34,10 +38,22 @@ const Carousel = () => {
                     />
                 </div>
 
-                <div className="Buttons">
-                    <button onClick={() => prevSlide()}>Previous</button>
-                    <button onClick={() => nextSlide()}>Next</button>
-                </div>
+                <Button
+                    className="prev"
+                    outline
+                    color="secondary"
+                    onClick={() => prevSlide()}
+                >
+                    <FontAwesomeIcon icon={['fas', 'arrow-left']} size="2x" />
+                </Button>
+                <Button
+                    className="next"
+                    outline
+                    color="secondary"
+                    onClick={() => nextSlide()}
+                >
+                    <FontAwesomeIcon icon={['fas', 'arrow-right']} size="2x" />
+                </Button>
             </div>
         </>
     );

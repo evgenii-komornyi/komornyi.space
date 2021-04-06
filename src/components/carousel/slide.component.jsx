@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { Button } from 'reactstrap';
 import './carousel.style.sass';
 
 const Slide = ({ currentIndex, slides, onClick }) => {
     const { hobbies } = slides;
     const arrLength = hobbies.length;
+    console.log(arrLength);
 
     return (
         <>
@@ -22,19 +23,36 @@ const Slide = ({ currentIndex, slides, onClick }) => {
                 return (
                     <div
                         key={slide.id}
-                        className={`Carousel-slide ${classMapper[index]}`}
+                        className={`Carousel-slide ${
+                            typeof classMapper[index] !== 'undefined'
+                                ? classMapper[index]
+                                : 'hidden'
+                        }`}
                         onClick={() => onClick(index)}
                     >
-                        {slide.content && (
-                            <div className="content">
-                                <div className="title">
-                                    {slide.content.title}
-                                </div>
-                                <div className="description"></div>
-                                <div className="link"></div>
-                            </div>
-                        )}
                         <img src={slide.imageUrl} alt="" />
+                        {slide.content &&
+                            slide.content.map((ctnt, index) => (
+                                <div className="content" key={index}>
+                                    <h2 className="title">{ctnt.title}</h2>
+                                    {ctnt.description && (
+                                        <p className="description">
+                                            {ctnt.description}
+                                        </p>
+                                    )}
+                                    {ctnt.linkUrl && (
+                                        <div className="link">
+                                            <Button
+                                                color="secondary"
+                                                outline
+                                                href={ctnt.linkUrl}
+                                            >
+                                                {ctnt.linkText}
+                                            </Button>
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
                     </div>
                 );
             })}

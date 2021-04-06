@@ -1,19 +1,42 @@
 @import '../../sass/parts/_variables'
 
 .Wrapper
-    padding: 50px 0
+    padding: 0 0 100px
+    margin-bottom: 20px
     text-align: center
     width: 100%
-    overflow-x: hidden
+    overflow: hidden
+
+    button
+        margin: 0 5px
+        font-size: 16px
+        border-radius: 50% $imp
+        padding: 10px 10px $imp
+        transition: all 300ms
+        outline: none
+
+        &.prev
+            position: absolute
+            top: 40%
+            left: 0
+
+        &.next
+            position: absolute
+            top: 40%
+            right: 0
+
+        &:focus
+            box-shadow: 0 0 0 4px #ddd
+
+        &:disabled
+            opacity: 0.5
 
 .Carousel
-    line-height: 300px
-    height: 500px
+    height: 510px
     position: relative
     width: 500px
     max-width: 80%
     margin: 0 auto
-
 
 .Carousel-slide
     color: #fff
@@ -25,6 +48,20 @@
     transition: transform 500ms, opacity 500ms
     font-size: 30px
 
+    .content
+        padding: 5px
+        width: 100%
+        color: $Black
+        text-align: center
+
+        h2.title::first-letter
+            text-transform: uppercase
+
+        p.description
+            font-size: 15px
+
+    &.hidden
+        opacity: 0
 
 @media (max-width: 500px)
     .Carousel
@@ -36,6 +73,8 @@
     opacity: 0
     pointer-events: none
 
+    .content
+        display: none
 
 .Carousel-slide--left
     z-index: 1
@@ -43,15 +82,24 @@
     opacity: 0.7
     cursor: pointer
 
+    .content
+        display: none
+
 
 .Carousel-slide--active
     z-index: 2
+
+    img
+        +box-shadow(0, 0, 20px, rgba($Black, .5))
 
 .Carousel-slide--right
     z-index: 1
     transform: translate(60%) scale(0.8)
     opacity: 0.7
     cursor: pointer
+
+    .content
+        display: none
 
 
 .Carousel-slide--next
@@ -60,27 +108,5 @@
     opacity: 0
     pointer-events: none
 
-
-.Buttons
-    margin: 10px 0 50px
-
-    button
-        margin: 0 5px
-        border: 1px solid #ddd
-        background: #fff
-        font-size: 16px
-        border-radius: 50px
-        padding: 10px 18px
-        transition: all 300ms
-        outline: none
-
-        &:focus
-            box-shadow: 0 0 0 4px #ddd
-
-        &:hover:not(:disabled)
-            color: #2980B9
-            border-color: #2980B9
-            cursor: pointer
-
-        &:disabled
-            opacity: 0.5
+    .content
+        display: none
