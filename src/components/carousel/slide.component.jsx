@@ -5,7 +5,6 @@ import './carousel.style.sass';
 const Slide = ({ currentIndex, slides, onClick }) => {
     const { hobbies } = slides;
     const arrLength = hobbies.length;
-    console.log(arrLength);
 
     return (
         <>

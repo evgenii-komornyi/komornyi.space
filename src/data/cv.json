@@ -1,0 +1,281 @@
+{
+    "experience": [
+        {
+            "id": 1,
+            "job": "Webmaster",
+            "specification": "Freelance - IT technologies",
+            "periodFrom": 2017,
+            "periodTo": 2019,
+            "description": "Creation of web pages based on Joomla, Wordpress and Gantry framework, or from the scratch on HTML. CSS and JQUERY. Content management SEO optimization."
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "institution": "Kyrgyz State Technical University named after I.Razzakov",
+            "grade": "Bachelor",
+            "faculty": "Information / Media",
+            "yearStart": 2013,
+            "yearEnd": 2016,
+            "specification": "Polygraphy",
+            "high": true
+        },
+        {
+            "id": 2,
+            "institution": "Kyrgyz-Russian Slavic University",
+            "grade": "Master",
+            "faculty": "Mathematics / natural sciences, Natural Sciences",
+            "yearStart": 2008,
+            "yearEnd": 2013,
+            "specification": "Meteorology and environment protection",
+            "high": true
+        },
+        {
+            "id": 3,
+            "institution": "Secondary School № 31 of Bishkek",
+            "grade": "Secondary",
+            "yearStart": 1998,
+            "yearEnd": 2008,
+            "high": false
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "course": "Complete React Developer in 2021 (Redux, Hooks, GraphQL)",
+            "institution": "Udemy",
+            "year": 2021,
+            "progress": "in-progress",
+            "progressValue": "40"
+        },
+        {
+            "id": 2,
+            "course": "Complete Javascript Course 2021: From Zero To Expert",
+            "institution": "Udemy",
+            "year": 2021,
+            "certificate": "http://127.0.0.1:8887/certificates/javascript.jpg",
+            "progress": "complete"
+        },
+        {
+            "id": 3,
+            "course": "Agile - Java Web Development",
+            "institution": "JavaGuru",
+            "year": 2020,
+            "certificate": "http://127.0.0.1:8887/certificates/java2.png",
+            "progress": "complete"
+        },
+        {
+            "id": 4,
+            "course": "Java. Basics of OOP",
+            "institution": "JavaGuru",
+            "year": 2019,
+            "certificate": "http://127.0.0.1:8887/certificates/java1.jpg",
+            "progress": "complete"
+        }
+    ],
+    "languages": [
+        {
+            "id": 1,
+            "language": "Russian",
+            "level": "Native language.",
+            "icon": "http://127.0.0.1:8887/languages/russian.png"
+        },
+        {
+            "id": 2,
+            "language": "English",
+            "level": "Can make some mistakes, mix up the tenses and have a limited vocabulary. But otherwise I can communicate and have a good understand written and spoken texts.",
+            "icon": "http://127.0.0.1:8887/languages/english.png"
+        },
+        {
+            "id": 3,
+            "language": "Latvian",
+            "level": "I have A1 category. Can understand and discuss simple things.",
+            "icon": "http://127.0.0.1:8887/languages/latvian.png"
+        }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "skill": "Javascript",
+            "keywords": ["frontend", "js", "UI"],
+            "icon": "http://127.0.0.1:8887/skills/javascript.png",
+            "main": true
+        },
+        {
+            "id": 2,
+            "skill": "ReactJS",
+            "keywords": ["frontend", "js", "UI"],
+            "icon": "http://127.0.0.1:8887/skills/react.png",
+            "main": true
+        },
+        {
+            "id": 3,
+            "skill": "CSS3",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "icon": "http://127.0.0.1:8887/skills/css3.png",
+            "main": true
+        },
+        {
+            "id": 4,
+            "skill": "SASS",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "icon": "http://127.0.0.1:8887/skills/sass.png",
+            "main": true
+        },
+        {
+            "id": 5,
+            "skill": "HTML5",
+            "keywords": ["frontend", "html", "UI"],
+            "icon": "http://127.0.0.1:8887/skills/html5.png",
+            "main": true
+        },
+        {
+            "id": 6,
+            "skill": "Java",
+            "keywords": ["backend", "java"],
+            "icon": "http://127.0.0.1:8887/skills/java.png",
+            "main": true
+        },
+        {
+            "id": 7,
+            "skill": "C#",
+            "keywords": ["backend", "c#"],
+            "icon": "http://127.0.0.1:8887/skills/c-sharp.png",
+            "main": true
+        },
+        {
+            "id": 8,
+            "skill": "SQL",
+            "keywords": ["database", "sql"],
+            "icon": "http://127.0.0.1:8887/skills/sql.png",
+            "main": true
+        },
+        {
+            "id": 9,
+            "skill": "RestAPI",
+            "keywords": ["backend", "frontend", "c#", "java", "json", "js"],
+            "icon": "http://127.0.0.1:8887/skills/rest-api.png",
+            "main": true
+        },
+        {
+            "id": 10,
+            "skill": "Bootstrap",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "main": false
+        },
+        {
+            "id": 11,
+            "skill": "UIkit",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "main": false
+        },
+        {
+            "id": 12,
+            "skill": "Hibernate",
+            "keywords": ["backend", "java"],
+            "main": false
+        },
+        {
+            "id": 13,
+            "skill": "Entity Framework",
+            "keywords": ["backend", "c#"],
+            "main": false
+        },
+        {
+            "id": 14,
+            "skill": "Spring",
+            "keywords": ["backend", "java"],
+            "main": false
+        },
+        {
+            "id": 15,
+            "skill": "Mockito",
+            "keywords": ["backend", "java", "test"],
+            "main": false
+        },
+        {
+            "id": 16,
+            "skill": "Moq",
+            "keywords": ["backend", "c#", "test"],
+            "main": false
+        },
+        {
+            "id": 17,
+            "skill": "JUnit",
+            "keywords": ["backend", "java", "test"],
+            "main": false
+        },
+        {
+            "id": 18,
+            "skill": "Ajax",
+            "keywords": ["frontend", "js"],
+            "main": false
+        },
+        {
+            "id": 19,
+            "skill": "JSON",
+            "keywords": ["frontend", "backend", "java", "c#", "js"],
+            "main": false
+        },
+        {
+            "id": 20,
+            "skill": "MS Office",
+            "keywords": ["os"],
+            "main": false
+        },
+        {
+            "id": 21,
+            "skill": "MS SQL",
+            "keywords": ["backend", "sql", "c#", "database"],
+            "main": false
+        },
+        {
+            "id": 22,
+            "skill": "MySQL",
+            "keywords": ["backend", "sql", "c#", "java", "database"],
+            "main": false
+        },
+        {
+            "id": 23,
+            "skill": "Linux",
+            "keywords": ["os"],
+            "main": false
+        },
+        {
+            "id": 24,
+            "skill": "Windows",
+            "keywords": ["os"],
+            "main": false
+        },
+        {
+            "id": 25,
+            "skill": "Joomla",
+            "keywords": ["frontend", "backend", "html", "css", "js"],
+            "main": false
+        },
+        {
+            "id": 26,
+            "skill": "Wordpress",
+            "keywords": ["frontend", "backend", "html", "css", "js"],
+            "main": false
+        },
+        {
+            "id": 27,
+            "skill": "Git",
+            "keywords": ["git"],
+            "main": false
+        },
+        {
+            "id": 28,
+            "skill": "Github",
+            "keywords": ["git"],
+            "main": false
+        },
+        {
+            "id": 29,
+            "skill": "Gantry5",
+            "keywords": ["frontend", "backend", "html", "css", "js"],
+            "main": false
+        }
+    ]
+}

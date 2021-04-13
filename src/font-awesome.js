@@ -5,6 +5,11 @@ import {
     faHourglassStart,
     faArrowLeft,
     faArrowRight,
+    faUserGraduate,
+    faUniversity,
+    faPencilRuler,
+    faBriefcase,
+    faHourglassEnd,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -12,5 +17,10 @@ library.add(
     faBookmark,
     faHourglassStart,
     faArrowLeft,
-    faArrowRight
+    faArrowRight,
+    faUserGraduate,
+    faUniversity,
+    faPencilRuler,
+    faBriefcase,
+    faHourglassEnd
 );

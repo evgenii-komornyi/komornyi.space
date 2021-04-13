@@ -2,7 +2,19 @@
     "hobbies": [
         {
             "id": 1,
-            "imageUrl": "http://127.0.0.1:8887/bike.png",
+            "imageUrl": "http://127.0.0.1:8887/hobby/music.png",
+            "content": [
+                {
+                    "title": "Listen to music",
+                    "description": "I love music. And this music is metal. Great is not the one who imitates. Great is the one who creates!",
+                    "linkUrl": "/music",
+                    "linkText": "My music"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "imageUrl": "http://127.0.0.1:8887/hobby/bike.png",
             "content": [
                 {
                     "title": "Bike",
@@ -11,8 +23,8 @@
             ]
         },
         {
-            "id": 2,
-            "imageUrl": "http://127.0.0.1:8887/chess.png",
+            "id": 3,
+            "imageUrl": "http://127.0.0.1:8887/hobby/chess.png",
             "content": [
                 {
                     "title": "Chess",
@@ -23,8 +35,8 @@
             ]
         },
         {
-            "id": 3,
-            "imageUrl": "http://127.0.0.1:8887/drumming.png",
+            "id": 4,
+            "imageUrl": "http://127.0.0.1:8887/hobby/drumming.png",
             "content": [
                 {
                     "title": "Drums",
@@ -33,8 +45,8 @@
             ]
         },
         {
-            "id": 4,
-            "imageUrl": "http://127.0.0.1:8887/gaming.png",
+            "id": 5,
+            "imageUrl": "http://127.0.0.1:8887/hobby/gaming.png",
             "content": [
                 {
                     "title": "Video Games",
@@ -43,8 +55,8 @@
             ]
         },
         {
-            "id": 5,
-            "imageUrl": "http://127.0.0.1:8887/traveling.png",
+            "id": 6,
+            "imageUrl": "http://127.0.0.1:8887/hobby/traveling.png",
             "content": [
                 {
                     "title": "Traveling",
@@ -53,8 +65,8 @@
             ]
         },
         {
-            "id": 6,
-            "imageUrl": "http://127.0.0.1:8887/reading-books.png",
+            "id": 7,
+            "imageUrl": "http://127.0.0.1:8887/hobby/reading-books.png",
             "content": [
                 {
                     "title": "Reading books",
