@@ -10,6 +10,7 @@ import {
     faPencilRuler,
     faBriefcase,
     faHourglassEnd,
+    faHeart,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -22,5 +23,6 @@ library.add(
     faUniversity,
     faPencilRuler,
     faBriefcase,
-    faHourglassEnd
+    faHourglassEnd,
+    faHeart
 );

@@ -16,7 +16,7 @@ const Courses = () => (
         </Row>
         <Row>
             {data.courses.map(course => (
-                <Col xl={3} key={course.id}>
+                <Col xl={3} sm={6} key={course.id}>
                     <Course
                         id={course.id}
                         course={course.course}

@@ -12,6 +12,8 @@ import slides from '../../data/hobbies.json';
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
     const { hobbies } = slides;
     const hobbiesLength = hobbies.length;
 
@@ -27,6 +29,19 @@ const Carousel = () => {
         setCurrentIndex((currentIndex + 1) % hobbiesLength);
     };
 
+    const touchStartHandler = e => {
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const touchMoveHandler = e => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const touchEndHandler = () => {
+        if (touchStart - touchEnd < -75) prevSlide();
+        if (touchStart - touchEnd > 75) nextSlide();
+    };
+
     return (
         <>
             <div className="Wrapper">
@@ -35,6 +50,9 @@ const Carousel = () => {
                         currentIndex={currentIndex}
                         slides={slides}
                         onClick={goToSlide}
+                        onTouchStart={e => touchStartHandler(e)}
+                        onTouchMove={e => touchMoveHandler(e)}
+                        onTouchEnd={touchEndHandler}
                     />
                 </div>
 

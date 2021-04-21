@@ -163,7 +163,7 @@ const Filter = ({ data, filter }) => {
             </Row>
             <Row>
                 {books.map(book => (
-                    <Col xl="3" key={book.id}>
+                    <Col xl="3" sm={6} md={3} key={book.id}>
                         <div className="library">
                             <Progress book={book} />
                             <img

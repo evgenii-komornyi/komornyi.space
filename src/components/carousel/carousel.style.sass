@@ -19,11 +19,13 @@
             position: absolute
             top: 40%
             left: 0
+            z-index: 5
 
         &.next
             position: absolute
             top: 40%
             right: 0
+            z-index: 5
 
         &:focus
             box-shadow: 0 0 0 4px #ddd
@@ -53,6 +55,8 @@
         width: 100%
         color: $Black
         text-align: center
+        position: relative
+        z-index: 999
 
         h2.title::first-letter
             text-transform: uppercase
@@ -62,10 +66,6 @@
 
     &.hidden
         opacity: 0
-
-@media (max-width: 500px)
-    .Carousel
-        width: 60%
 
 .Carousel-slide--previous
     z-index: 0
@@ -110,3 +110,59 @@
 
     .content
         display: none
+
+@media screen and (max-width: 480px)
+    .Wrapper
+        button
+            border: 1px solid $Black
+            color: $Snow
+
+            &.prev
+                position: absolute
+                top: 30%
+                left: 0
+                z-index: 5
+
+            &.next
+                position: absolute
+                top: 30%
+                right: 0
+                z-index: 5
+
+            &:focus
+                box-shadow: 0 0 0 4px $Snow
+
+            &:disabled
+                opacity: 0.5
+    .Carousel
+        height: 530px
+        max-width: 100%
+        margin: 0 auto
+
+@media screen and (min-width: 481px) and (max-width: 767px)
+    .Wrapper
+        button
+            border: 1px solid $Black
+            color: $Snow
+
+            &.prev
+                position: absolute
+                top: 30%
+                left: 0
+                z-index: 5
+
+            &.next
+                position: absolute
+                top: 30%
+                right: 0
+                z-index: 5
+
+            &:focus
+                box-shadow: 0 0 0 4px $Snow
+
+            &:disabled
+                opacity: 0.5
+    .Carousel
+        height: 530px
+        max-width: 100%
+        margin: 0 auto

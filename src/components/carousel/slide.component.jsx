@@ -2,7 +2,14 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import './carousel.style.sass';
 
-const Slide = ({ currentIndex, slides, onClick }) => {
+const Slide = ({
+    currentIndex,
+    slides,
+    onClick,
+    onTouchStart,
+    onTouchMove,
+    onTouchEnd,
+}) => {
     const { hobbies } = slides;
     const arrLength = hobbies.length;
 
@@ -29,7 +36,13 @@ const Slide = ({ currentIndex, slides, onClick }) => {
                         }`}
                         onClick={() => onClick(index)}
                     >
-                        <img src={slide.imageUrl} alt="" />
+                        <img
+                            src={slide.imageUrl}
+                            alt=""
+                            onTouchStart={e => onTouchStart(e)}
+                            onTouchMove={e => onTouchMove(e)}
+                            onTouchEnd={() => onTouchEnd()}
+                        />
                         {slide.content &&
                             slide.content.map((ctnt, index) => (
                                 <div className="content" key={index}>

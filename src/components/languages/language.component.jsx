@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 
 const Language = ({ language }) => (
-    <Col xl={4}>
+    <Col xl={4} md={4}>
         <Card className="language">
             <CardImg
                 top

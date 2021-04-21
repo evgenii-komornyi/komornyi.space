@@ -16,7 +16,7 @@ const Education = () => (
         </Row>
         <Row>
             {data.education.map(ed => (
-                <Col key={ed.id}>
+                <Col key={ed.id} xl={4} md={4}>
                     <Organization
                         institution={ed.institution}
                         grade={ed.grade}
