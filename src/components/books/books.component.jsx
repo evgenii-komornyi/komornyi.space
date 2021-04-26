@@ -12,7 +12,9 @@ const Books = ({ filter }) => {
         <>
             <Row>
                 <Col>
-                    <h1>{filter >= 4 ? 'Last read books' : 'Library'}</h1>
+                    {filter > 1 && (
+                        <h1>{filter >= 4 ? 'Last read books' : 'Library'}</h1>
+                    )}
                 </Col>
             </Row>
             <Row>

@@ -10,6 +10,7 @@ import BooksPage from './pages/books';
 import MusicPage from './pages/music';
 
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Route exact path="/library" component={BooksPage} />
                 <Route exact path="/music" component={MusicPage} />
             </Switch>
+            <Footer />
         </>
     );
 }

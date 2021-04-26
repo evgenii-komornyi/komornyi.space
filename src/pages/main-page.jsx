@@ -1,9 +1,17 @@
 import React from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+
+import Covid from '../components/covid/covid.component';
+import Books from '../components/books/books.component';
 
 const MainPage = () => (
     <Container>
-        <div>Main page</div>
+        <Covid />
+        <Row>
+            <Col>
+                <Books filter={4} />
+            </Col>
+        </Row>
     </Container>
 );
 

@@ -1,4 +1,4 @@
-import http from './http-common';
+import http from './lastFM-common';
 
 const VERSION = '2.0';
 const USER = 'sin-ov-death';

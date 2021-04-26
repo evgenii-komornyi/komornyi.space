@@ -62,7 +62,6 @@ const Filter = ({ data, filter }) => {
             <Row>
                 {filter === -1 && (
                     <>
-                        <Col className="text-left">Categories</Col>
                         <Col className="text-right">
                             <div className="filter">
                                 <ButtonDropdown
@@ -107,7 +106,7 @@ const Filter = ({ data, filter }) => {
                                             )
                                         )}{' '}
                                     </DropdownMenu>
-                                </ButtonDropdown>
+                                </ButtonDropdown>{' '}
                                 <ButtonDropdown
                                     direction="down"
                                     isOpen={isYearsOpen}
@@ -162,22 +161,24 @@ const Filter = ({ data, filter }) => {
                 )}
             </Row>
             <Row>
-                {books.map(book => (
-                    <Col xl="3" sm={6} md={3} key={book.id}>
-                        <div className="library">
-                            <Progress book={book} />
-                            <img
-                                className="bookImage"
-                                src={book.image}
-                                alt={book.title}
-                            />
-                            <div className="bookTitle">{book.title}</div>
-                            <div className="bookAuthor">
-                                <span>by {book.author}</span>
+                {books
+                    .sort((a, b) => b - a)
+                    .map(book => (
+                        <Col xl="3" sm={6} md={3} key={book.id}>
+                            <div className="library">
+                                <Progress book={book} />
+                                <img
+                                    className="bookImage"
+                                    src={book.image}
+                                    alt={book.title}
+                                />
+                                <div className="bookTitle">{book.title}</div>
+                                <div className="bookAuthor">
+                                    <span>by {book.author}</span>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
-                ))}
+                        </Col>
+                    ))}
             </Row>
             <Row>
                 <Col className="text-center">
