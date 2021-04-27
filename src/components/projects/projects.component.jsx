@@ -26,7 +26,7 @@ const Projects = () => {
         <>
             <Row>
                 <Col>
-                    <h1>Educational projects</h1>
+                    <h1>Projects for studies</h1>
                 </Col>
             </Row>
             <Row>
@@ -34,7 +34,7 @@ const Projects = () => {
                     .filter(p => p.type === 'study')
                     .map(project => (
                         <Col key={project.id} xl={4} sm={4} md={6}>
-                            <Card>
+                            <Card className="projects">
                                 <CardImg
                                     top
                                     width="100%"
@@ -80,7 +80,7 @@ const Projects = () => {
             </Row>
             <Row>
                 <Col>
-                    <h1>Working projects</h1>
+                    <h1>Projects for work</h1>
                 </Col>
             </Row>
             <Row>
@@ -88,7 +88,7 @@ const Projects = () => {
                     .filter(p => p.type === 'work')
                     .map(project => (
                         <Col key={project.id} xl={4} sm={4} md={6}>
-                            <Card>
+                            <Card className="projects">
                                 <CardImg
                                     top
                                     width="100%"

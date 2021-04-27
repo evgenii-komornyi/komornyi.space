@@ -16,12 +16,16 @@ const Library = () => {
         };
         fetchData();
     }, []);
+
     const getDataByPage = async page => {
         const artistsData = await LastFM.getLibrary(page);
         setLibrary(artistsData.data);
     };
 
+    const [currentPage, setCurrentPage] = useState(1);
+
     const setPage = page => {
+        setCurrentPage(page);
         getDataByPage(page);
     };
 
@@ -39,6 +43,7 @@ const Library = () => {
                                         key={index}
                                         artist={artist.name}
                                         scrobbled={artist.playcount}
+                                        currentPage={currentPage}
                                     />
                                 ))}
                         </ListGroup>

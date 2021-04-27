@@ -7,10 +7,12 @@ import './sass/main.sass';
 import './font-awesome';
 
 import App from './App';
+import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
+            <ScrollToTop />
             <App />
         </BrowserRouter>
     </React.StrictMode>,

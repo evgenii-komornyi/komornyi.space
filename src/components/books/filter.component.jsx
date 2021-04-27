@@ -45,7 +45,9 @@ const Filter = ({ data, filter }) => {
               );
     };
 
-    const filteredBooks = data.books.filter(book => book.id <= filter);
+    const filteredBooks = data.books.filter(
+        (book, index) => index + 1 <= filter
+    );
 
     const [books, setBooks] = useState(
         filter === -1 ? data.books : filteredBooks
@@ -164,7 +166,7 @@ const Filter = ({ data, filter }) => {
                 {books
                     .sort((a, b) => b - a)
                     .map(book => (
-                        <Col xl="3" sm={6} md={3} key={book.id}>
+                        <Col xl={3} sm={6} md={3} key={book.id}>
                             <div className="library">
                                 <Progress book={book} />
                                 <img

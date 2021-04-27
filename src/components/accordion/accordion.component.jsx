@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
     ListGroupItem,
     ListGroupItemHeading,
@@ -12,13 +12,19 @@ import Chevron from './chevron.component';
 
 import LastFM from '../../api-service/lastFM';
 
-const Accordion = ({ artist: artistName, scrobbled }) => {
+const Accordion = ({ artist: artistName, scrobbled, currentPage }) => {
     const [active, setActive] = useState('');
     const [height, setHeight] = useState('0px');
     const [rotate, setRotate] = useState('accordion__icon');
     const [artistByName, setArtist] = useState(null);
 
     const content = useRef(null);
+
+    useEffect(() => {
+        setActive('');
+        setHeight('0px');
+        setRotate('accordion__icon');
+    }, [currentPage]);
 
     const getDataByName = async () => {
         const artistData = await LastFM.getArtist(artistName);
