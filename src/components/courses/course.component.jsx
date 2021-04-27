@@ -12,6 +12,8 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const baseImgUrl = 'http://127.0.0.1:8887/certificates/';
+
 const Course = ({ course, progress, progressValue, certificate }) => {
     const [modal, setModal] = useState(false);
 
@@ -56,7 +58,7 @@ const Course = ({ course, progress, progressValue, certificate }) => {
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader toggle={toggle}>{course}</ModalHeader>
                 <ModalBody>
-                    <img src={certificate} alt={course} />
+                    <img src={baseImgUrl + certificate} alt={course} />
                 </ModalBody>
                 <ModalFooter></ModalFooter>
             </Modal>

@@ -53,7 +53,7 @@
             "course": "Complete Javascript Course 2021: From Zero To Expert",
             "institution": "Udemy",
             "year": 2021,
-            "certificate": "http://127.0.0.1:8887/certificates/javascript.jpg",
+            "certificate": "javascript.jpg",
             "progress": "complete"
         },
         {
@@ -61,7 +61,7 @@
             "course": "Agile - Java Web Development",
             "institution": "JavaGuru",
             "year": 2020,
-            "certificate": "http://127.0.0.1:8887/certificates/java2.png",
+            "certificate": "java2.png",
             "progress": "complete"
         },
         {
@@ -69,7 +69,7 @@
             "course": "Java. Basics of OOP",
             "institution": "JavaGuru",
             "year": 2019,
-            "certificate": "http://127.0.0.1:8887/certificates/java1.jpg",
+            "certificate": "java1.jpg",
             "progress": "complete"
         }
     ],
@@ -78,19 +78,19 @@
             "id": 1,
             "language": "Russian",
             "level": "Native language.",
-            "icon": "http://127.0.0.1:8887/languages/russian.png"
+            "icon": "russian.png"
         },
         {
             "id": 2,
             "language": "English",
             "level": "Can make some mistakes, mix up the tenses and have a limited vocabulary. But otherwise I can communicate and have a good understanding of the written and spoken texts.",
-            "icon": "http://127.0.0.1:8887/languages/english.png"
+            "icon": "english.png"
         },
         {
             "id": 3,
             "language": "Latvian",
             "level": "I have A1 category. Can understand and discuss simple things.",
-            "icon": "http://127.0.0.1:8887/languages/latvian.png"
+            "icon": "latvian.png"
         }
     ],
     "skills": [
@@ -98,7 +98,7 @@
             "id": 1,
             "skill": "Javascript",
             "keywords": ["frontend", "js", "UI"],
-            "icon": "http://127.0.0.1:8887/skills/javascript.png",
+            "icon": "javascript.png",
             "main": true,
             "favorite": true
         },
@@ -106,7 +106,7 @@
             "id": 2,
             "skill": "ReactJS",
             "keywords": ["frontend", "js", "UI"],
-            "icon": "http://127.0.0.1:8887/skills/react.png",
+            "icon": "react.png",
             "main": true,
             "favorite": true
         },
@@ -114,7 +114,7 @@
             "id": 3,
             "skill": "CSS3",
             "keywords": ["frontend", "css", "UI", "html"],
-            "icon": "http://127.0.0.1:8887/skills/css3.png",
+            "icon": "css3.png",
             "main": true,
             "favorite": false
         },
@@ -122,7 +122,7 @@
             "id": 4,
             "skill": "SASS",
             "keywords": ["frontend", "css", "UI", "html"],
-            "icon": "http://127.0.0.1:8887/skills/sass.png",
+            "icon": "sass.png",
             "main": true,
             "favorite": true
         },
@@ -130,7 +130,7 @@
             "id": 5,
             "skill": "HTML5",
             "keywords": ["frontend", "html", "UI"],
-            "icon": "http://127.0.0.1:8887/skills/html5.png",
+            "icon": "html5.png",
             "main": true,
             "favorite": false
         },
@@ -138,7 +138,7 @@
             "id": 6,
             "skill": "Java",
             "keywords": ["backend", "java"],
-            "icon": "http://127.0.0.1:8887/skills/java.png",
+            "icon": "java.png",
             "main": true,
             "favorite": false
         },
@@ -146,7 +146,7 @@
             "id": 7,
             "skill": "C#",
             "keywords": ["backend", "c#"],
-            "icon": "http://127.0.0.1:8887/skills/c-sharp.png",
+            "icon": "c-sharp.png",
             "main": true,
             "favorite": true
         },
@@ -154,7 +154,7 @@
             "id": 8,
             "skill": "SQL",
             "keywords": ["database", "sql"],
-            "icon": "http://127.0.0.1:8887/skills/sql.png",
+            "icon": "sql.png",
             "main": true,
             "favorite": false
         },
@@ -162,7 +162,7 @@
             "id": 9,
             "skill": "RestAPI",
             "keywords": ["backend", "frontend", "c#", "java", "json", "js"],
-            "icon": "http://127.0.0.1:8887/skills/rest-api.png",
+            "icon": "rest-api.png",
             "main": true,
             "favorite": true
         },

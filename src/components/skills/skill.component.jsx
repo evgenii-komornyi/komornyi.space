@@ -3,6 +3,8 @@ import { Col, Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const baseImgUrl = 'http://127.0.0.1:8887/skills/';
+
 const Skill = ({ skills }) =>
     skills.map(skill => (
         <Col
@@ -20,7 +22,7 @@ const Skill = ({ skills }) =>
                 {skill.icon && (
                     <CardImg
                         top
-                        src={skill.icon}
+                        src={baseImgUrl + skill.icon}
                         alt={skill.skill}
                         className="skill-icon"
                     />

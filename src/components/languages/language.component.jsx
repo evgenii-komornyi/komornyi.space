@@ -1,12 +1,14 @@
 import React from 'react';
 import { Col, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 
+const baseImgUrl = 'http://127.0.0.1:8887/languages/';
+
 const Language = ({ language }) => (
     <Col xl={4} md={4}>
         <Card className="language">
             <CardImg
                 top
-                src={language.icon}
+                src={baseImgUrl + language.icon}
                 alt={language.language}
                 className="language-icon"
             />
