@@ -31,6 +31,8 @@ const Contacts = () => (
                     </CardBody>
                     <CardFooter>
                         <Button
+                            tag="a"
+                            target="_blank"
                             color="secondary"
                             outline
                             href="https://www.linkedin.com/in/evgenii-komornyi-459476183/"
@@ -49,6 +51,8 @@ const Contacts = () => (
                     </CardBody>
                     <CardFooter>
                         <Button
+                            tag="a"
+                            target="_blank"
                             color="secondary"
                             outline
                             href="mailto:evgeniikomornyi@gmail.com"
@@ -67,6 +71,8 @@ const Contacts = () => (
                     </CardBody>
                     <CardFooter>
                         <Button
+                            tag="a"
+                            target="_blank"
                             color="secondary"
                             outline
                             href="https://cv.lv/en/cvs/730375/pdf?lang=en"
