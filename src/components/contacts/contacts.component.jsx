@@ -27,7 +27,7 @@ const Contacts = () => (
                     <CardBody>
                         <CardTitle tag="h5">LinkedIn</CardTitle>
                         <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
-                        <CardText>You can connect me via linked-in</CardText>
+                        <CardText>You can contact me via linked-in</CardText>
                     </CardBody>
                     <CardFooter>
                         <Button
@@ -47,7 +47,7 @@ const Contacts = () => (
                     <CardBody>
                         <CardTitle tag="h5">E-Mail</CardTitle>
                         <FontAwesomeIcon icon={['fas', 'envelope']} size="3x" />
-                        <CardText>You can send me e-mail</CardText>
+                        <CardText>You can send me an e-mail</CardText>
                     </CardBody>
                     <CardFooter>
                         <Button
@@ -67,7 +67,11 @@ const Contacts = () => (
                     <CardBody>
                         <CardTitle tag="h5">Full CV</CardTitle>
                         <div className="cv">CV</div>
-                        <CardText>You can view my CV</CardText>
+                        <CardText>You can view my CV.</CardText>
+                        <CardText>
+                            Due to privacy policies only visible to registered
+                            employers.
+                        </CardText>
                     </CardBody>
                     <CardFooter>
                         <Button
