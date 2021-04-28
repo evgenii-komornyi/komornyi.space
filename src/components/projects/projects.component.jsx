@@ -17,7 +17,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import data from '../../data/projects.json';
 
-const baseImgUrl = 'http://127.0.0.1:8887';
+// const baseImgUrl = 'http://127.0.0.1:8887/projects/';
+const baseImgUrl = 'https://komornyi.space/static/img/projects/';
 
 const Projects = () => {
     console.log(data);

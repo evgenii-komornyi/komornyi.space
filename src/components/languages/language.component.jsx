@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 
-const baseImgUrl = 'http://127.0.0.1:8887/languages/';
+// const baseImgUrl = 'http://127.0.0.1:8887/languages/';
+const baseImgUrl = 'https://komornyi.space/static/img/languages/';
 
 const Language = ({ language }) => (
     <Col xl={4} md={4}>

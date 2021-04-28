@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'reactstrap';
 
-const ContactsPage = () => (
-    <Container>
-        <div>Contacts</div>
-    </Container>
-);
+import Contacts from '../components/contacts/contacts.component';
+
+const ContactsPage = ({ title }) => {
+    useEffect(() => {
+        document.title = title;
+    }, [title]);
+
+    return (
+        <Container>
+            <Contacts />
+        </Container>
+    );
+};
 
 export default ContactsPage;

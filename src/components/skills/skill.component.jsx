@@ -3,7 +3,8 @@ import { Col, Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const baseImgUrl = 'http://127.0.0.1:8887/skills/';
+// const baseImgUrl = 'http://127.0.0.1:8887/skills/';
+const baseImgUrl = 'https://komornyi.space/static/img/skills/';
 
 const Skill = ({ skills }) =>
     skills.map(skill => (

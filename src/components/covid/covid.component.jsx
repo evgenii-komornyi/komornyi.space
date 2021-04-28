@@ -14,6 +14,9 @@ import './covid.styles.sass';
 
 import CovidApi from '../../api-service/covid-19';
 
+// const baseImgUrl = 'http://127.0.0.1:8887/';
+const baseImgUrl = 'https://komornyi.space/static/img/';
+
 const Covid = () => {
     const [world, setWorld] = useState({
         confirmed: 0,
@@ -66,7 +69,7 @@ const Covid = () => {
                         <CardBody>
                             <CardTitle tag="h5">World statistic</CardTitle>
                             <img
-                                src="http://127.0.0.1:8887/world-map.png"
+                                src={`${baseImgUrl}world-map.png`}
                                 style={{ width: 50 + 'px', height: 50 + 'px' }}
                                 alt=""
                             />

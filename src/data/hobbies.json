@@ -2,7 +2,7 @@
     "hobbies": [
         {
             "id": 1,
-            "imageUrl": "http://127.0.0.1:8887/hobby/music.png",
+            "imageUrl": "music.png",
             "content": [
                 {
                     "title": "Listen to music",
@@ -14,7 +14,7 @@
         },
         {
             "id": 2,
-            "imageUrl": "http://127.0.0.1:8887/hobby/bike.png",
+            "imageUrl": "bike.png",
             "content": [
                 {
                     "title": "Bike",
@@ -24,7 +24,7 @@
         },
         {
             "id": 3,
-            "imageUrl": "http://127.0.0.1:8887/hobby/chess.png",
+            "imageUrl": "chess.png",
             "content": [
                 {
                     "title": "Chess",
@@ -36,7 +36,7 @@
         },
         {
             "id": 4,
-            "imageUrl": "http://127.0.0.1:8887/hobby/drumming.png",
+            "imageUrl": "drumming.png",
             "content": [
                 {
                     "title": "Drums",
@@ -46,7 +46,7 @@
         },
         {
             "id": 5,
-            "imageUrl": "http://127.0.0.1:8887/hobby/gaming.png",
+            "imageUrl": "gaming.png",
             "content": [
                 {
                     "title": "Video Games",
@@ -56,17 +56,17 @@
         },
         {
             "id": 6,
-            "imageUrl": "http://127.0.0.1:8887/hobby/traveling.png",
+            "imageUrl": "traveling.png",
             "content": [
                 {
                     "title": "Traveling",
-                    "description": "I love to take a long walk in the nature. By the way, Latvia has a couple of nice places. For example: The Big Bog of Kemery."
+                    "description": "I love to take a long walk in the nature. By the way, Latvia has a couple of really nice places. For example: The Big Bog of Kemery. Or the place you see in this photo. Can you guess where it is taken? ;)"
                 }
             ]
         },
         {
             "id": 7,
-            "imageUrl": "http://127.0.0.1:8887/hobby/reading-books.png",
+            "imageUrl": "reading-books.png",
             "content": [
                 {
                     "title": "Reading books",

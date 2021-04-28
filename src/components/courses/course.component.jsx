@@ -12,7 +12,8 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const baseImgUrl = 'http://127.0.0.1:8887/certificates/';
+// const baseImgUrl = 'http://127.0.0.1:8887/certificates/';
+const baseImgUrl = 'https://komornyi.space/static/img/certificates/';
 
 const Course = ({ course, progress, progressValue, certificate }) => {
     const [modal, setModal] = useState(false);
@@ -49,7 +50,9 @@ const Course = ({ course, progress, progressValue, certificate }) => {
                 {certificate && (
                     <div
                         className="certificate"
-                        style={{ backgroundImage: `url(${certificate})` }}
+                        style={{
+                            backgroundImage: `url(${baseImgUrl + certificate})`,
+                        }}
                         onClick={toggle}
                     />
                 )}

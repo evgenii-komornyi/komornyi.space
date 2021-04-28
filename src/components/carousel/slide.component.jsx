@@ -2,6 +2,9 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import './carousel.style.sass';
 
+// const baseImgUrl = 'http://127.0.0.1:8887/hobby/';
+const baseImgUrl = 'https://komornyi.space/static/img/hobby/';
+
 const Slide = ({
     currentIndex,
     slides,
@@ -37,7 +40,7 @@ const Slide = ({
                         onClick={() => onClick(index)}
                     >
                         <img
-                            src={slide.imageUrl}
+                            src={baseImgUrl + slide.imageUrl}
                             alt=""
                             onTouchStart={e => onTouchStart(e)}
                             onTouchMove={e => onTouchMove(e)}

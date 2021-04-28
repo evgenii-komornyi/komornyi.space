@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     ListGroupItem,
     ListGroupItemHeading,
@@ -18,8 +18,6 @@ const Accordion = ({ artist: artistName, scrobbled, currentPage }) => {
     const [rotate, setRotate] = useState('accordion__icon');
     const [artistByName, setArtist] = useState(null);
 
-    const content = useRef(null);
-
     useEffect(() => {
         setActive('');
         setHeight('0px');
@@ -33,9 +31,7 @@ const Accordion = ({ artist: artistName, scrobbled, currentPage }) => {
 
     const toggleAccordion = () => {
         setActive(active === '' ? 'active' : '');
-        setHeight(
-            active === 'active' ? '0px' : `${content.current.scrollHeight}px`
-        );
+        setHeight(active === 'active' ? '0px' : `100px`);
         setRotate(
             active === 'active' ? 'accordion__icon' : 'accordion__icon rotate'
         );
@@ -58,7 +54,6 @@ const Accordion = ({ artist: artistName, scrobbled, currentPage }) => {
                 <Chevron className={`${rotate}`} width={10} fill={'#000000'} />
             </button>
             <div
-                ref={content}
                 style={{ maxHeight: `${height}` }}
                 className="accordion__content"
             >

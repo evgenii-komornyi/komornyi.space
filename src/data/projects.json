@@ -5,7 +5,7 @@
             "name": "Guess My Number",
             "type": "study",
             "technologies": ["js"],
-            "imageUrl": "/projects/1.png",
+            "imageUrl": "1.png",
             "link": "https://guess-my-number-dev.netlify.app"
         },
         {
@@ -13,7 +13,7 @@
             "name": "Pig Game",
             "type": "study",
             "technologies": ["js"],
-            "imageUrl": "/projects/2.png",
+            "imageUrl": "2.png",
             "link": "https://pig-game-dev.netlify.app"
         },
         {
@@ -22,7 +22,7 @@
             "type": "study",
             "additionalInfo": "1) login: js, pin: 1111 2) login: jd, pin: 2222",
             "technologies": ["js"],
-            "imageUrl": "/projects/3.png",
+            "imageUrl": "3.png",
             "link": "https://bankist-account.netlify.app"
         },
         {
@@ -30,7 +30,7 @@
             "name": "Bankist Web",
             "type": "study",
             "technologies": ["js"],
-            "imageUrl": "/projects/4.png",
+            "imageUrl": "4.png",
             "link": "https://bankist-web.netlify.app/"
         },
         {
@@ -38,7 +38,7 @@
             "name": "Mapty",
             "type": "study",
             "technologies": ["js"],
-            "imageUrl": "/projects/5.png",
+            "imageUrl": "5.png",
             "link": "https://mapty-dev.netlify.app"
         },
         {
@@ -46,7 +46,7 @@
             "name": "Asynchronous Javascript",
             "type": "study",
             "technologies": ["js"],
-            "imageUrl": "/projects/6.png",
+            "imageUrl": "6.png",
             "link": "https://asynchronous-javascript.netlify.app"
         },
         {
@@ -54,7 +54,7 @@
             "name": "Recipes",
             "type": "study",
             "technologies": ["js"],
-            "imageUrl": "/projects/7.png",
+            "imageUrl": "7.png",
             "link": "https://recipes-v1.netlify.app"
         },
         {
@@ -62,7 +62,7 @@
             "name": "Ideal Variant Company",
             "type": "work",
             "technologies": ["joomla", "html5", "css3", "js"],
-            "imageUrl": "/projects/8.png",
+            "imageUrl": "8.png",
             "link": "http://ideal-variant39.ru"
         },
         {
@@ -70,7 +70,7 @@
             "name": "Advocate Service",
             "type": "work",
             "technologies": ["wordpress", "html5", "css3", "js"],
-            "imageUrl": "/projects/9.png",
+            "imageUrl": "9.png",
             "link": "http://advokatkleshnya39.ru"
         },
         {
@@ -78,7 +78,7 @@
             "name": "Mistral Pawilony Company",
             "type": "work",
             "technologies": ["wordpress", "html5", "css3", "js"],
-            "imageUrl": "/projects/10.png",
+            "imageUrl": "10.png",
             "link": "https://mistralpawilon.pl/"
         },
         {
@@ -86,7 +86,7 @@
             "name": "My Solo Company",
             "type": "work",
             "technologies": ["joomla", "html5", "css3", "js"],
-            "imageUrl": "/projects/11.png",
+            "imageUrl": "11.png",
             "link": "http://mysolo39.ru"
         }
     ]
