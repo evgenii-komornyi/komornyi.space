@@ -31,7 +31,7 @@ const Accordion = ({ artist: artistName, scrobbled, currentPage }) => {
 
     const toggleAccordion = () => {
         setActive(active === '' ? 'active' : '');
-        setHeight(active === 'active' ? '0px' : `100px`);
+        setHeight(active === 'active' ? '0px' : `150px`);
         setRotate(
             active === 'active' ? 'accordion__icon' : 'accordion__icon rotate'
         );
