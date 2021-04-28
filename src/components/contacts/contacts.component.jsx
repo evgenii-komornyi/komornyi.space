@@ -66,7 +66,7 @@ const Contacts = () => (
                 <Card className="contacts">
                     <CardBody>
                         <CardTitle tag="h5">Full CV</CardTitle>
-                        <div className="cv">CV</div>
+                        <div className="cv">CV.LV</div>
                         <CardText>You can view my CV.</CardText>
                         <CardText>
                             Due to privacy policies only visible to registered
