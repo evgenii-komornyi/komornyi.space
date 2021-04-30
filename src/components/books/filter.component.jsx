@@ -11,6 +11,8 @@ import {
 
 import Progress from './progress.component';
 
+const baseImgUrl = 'https://komornyi.space/static/img/books/';
+
 const Filter = ({ data, filter }) => {
     const progressUnique = new Set();
     data.books.map(book => progressUnique.add(book.progress));
@@ -171,7 +173,7 @@ const Filter = ({ data, filter }) => {
                                 <Progress book={book} />
                                 <img
                                     className="bookImage"
-                                    src={book.image}
+                                    src={baseImgUrl + book.image}
                                     alt={book.title}
                                 />
                                 <div className="bookTitle">{book.title}</div>

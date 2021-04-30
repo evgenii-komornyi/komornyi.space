@@ -20,7 +20,7 @@ const About = () => (
                 <p>
                     My name is Evgenii. Currently I am in search of a Junior
                     .NET/C# and ReactJS developer job. I learn ReactJS and C#
-                    myself, but I still need some guidance from more experience
+                    myself, but I still need some guidance from more experienced
                     people.
                 </p>
 

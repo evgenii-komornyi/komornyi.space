@@ -262,7 +262,7 @@
             "skill": "Linux",
             "keywords": ["os"],
             "main": false,
-            "favorite": false
+            "favorite": true
         },
         {
             "id": 24,

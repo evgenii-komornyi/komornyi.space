@@ -21,8 +21,6 @@ import data from '../../data/projects.json';
 const baseImgUrl = 'https://komornyi.space/static/img/projects/';
 
 const Projects = () => {
-    console.log(data);
-
     return (
         <>
             <Row>

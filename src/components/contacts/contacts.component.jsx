@@ -66,12 +66,8 @@ const Contacts = () => (
                 <Card className="contacts">
                     <CardBody>
                         <CardTitle tag="h5">Full CV</CardTitle>
-                        <div className="cv">CV.LV</div>
-                        <CardText>You can view my CV.</CardText>
-                        <CardText>
-                            Due to privacy policies only visible to registered
-                            employers.
-                        </CardText>
+                        <div className="cv">CV</div>
+                        <CardText>You can download my CV.</CardText>
                     </CardBody>
                     <CardFooter>
                         <Button
@@ -79,9 +75,9 @@ const Contacts = () => (
                             target="_blank"
                             color="secondary"
                             outline
-                            href="https://cv.lv/en/cvs/730375/pdf?lang=en"
+                            href="https://komornyi.space/cv/cv.pdf"
                         >
-                            View CV
+                            Open CV
                         </Button>
                     </CardFooter>
                 </Card>
