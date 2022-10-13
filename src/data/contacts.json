@@ -1,0 +1,30 @@
+[
+    {
+        "title": "LinkedIn",
+        "icon": ["fab", "linkedin"],
+        "description": "You can contact me via linked-in",
+        "link": "https://www.linkedin.com/in/evgenii-komornyi-459476183/",
+        "button": "connect"
+    },
+    {
+        "title": "GitHub",
+        "icon": ["fab", "github"],
+        "description": "You can see my github",
+        "link": "https://github.com/evgenii-komornyi",
+        "button": "open github"
+    },
+    {
+        "title": "E-Mail",
+        "icon": ["fas", "envelope"],
+        "description": "You can send me an e-mail",
+        "link": "mailto:evgeniikomornyi@gmail.com",
+        "button": "send e-mail"
+    },
+    {
+        "title": "Full CV",
+        "icon": ["fas", "file-pdf"],
+        "description": "You can download my CV",
+        "link": "https://komornyi.space/cv/cv.pdf",
+        "button": "download cv"
+    }
+]

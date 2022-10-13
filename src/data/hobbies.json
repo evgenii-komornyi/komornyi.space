@@ -1,0 +1,80 @@
+{
+    "hobbies": [
+        {
+            "id": 1,
+            "imageUrl": "music.png",
+            "content": [
+                {
+                    "title": "Listen to music",
+                    "description": "I love music. And this music is metal. Great is not the one who imitates. Great is the one who creates!",
+                    "linkUrl": "/music",
+                    "linkText": "My music"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "imageUrl": "bike.png",
+            "content": [
+                {
+                    "title": "Bike",
+                    "description": "Due to my cerebral palsy parents were afraid to teach me how to ride the bicycle. So I first try it when I was 30. I find it a very nice activity for my free time."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "imageUrl": "chess.png",
+            "content": [
+                {
+                    "title": "Chess",
+                    "description": "If you want to play with me, click on the link below",
+                    "linkUrl": "https://lichess.org/?user=sin_ov_death#friend",
+                    "linkText": "Duel me"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "imageUrl": "drumming.png",
+            "content": [
+                {
+                    "title": "Drums",
+                    "description": "When I was 16, I started to listen to rock music, and I had a dream to play drums. I did everything to fulfill it. (Sorry neighbors :) ) "
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "imageUrl": "gaming.png",
+            "content": [
+                {
+                    "title": "Video Games",
+                    "description": "My favorite genre is the horror with a good story as a basis. Also play strategies and logical games."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "imageUrl": "traveling.png",
+            "content": [
+                {
+                    "title": "Traveling",
+                    "description": "I love to take a long walk in the nature. By the way, Latvia has a couple of really nice places. For example: The Big Bog of Kemery. Or the place you see in this photo. Can you guess where it is taken? ;)"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "imageUrl": "reading-books.png",
+            "content": [
+                {
+                    "title": "Reading books",
+                    "description": "Mostly into horror. But I also love popular science and of course clever IT books.",
+                    "linkUrl": "/library",
+                    "linkText": "My library"
+                }
+            ]
+        }
+    ]
+}

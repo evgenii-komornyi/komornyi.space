@@ -1,0 +1,120 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "name": "Guess My Number",
+            "type": "study",
+            "technologies": ["js"],
+            "imageUrl": "1.png",
+            "link": "https://guess-my-number-dev.netlify.app"
+        },
+        {
+            "id": "2",
+            "name": "Pig Game",
+            "type": "study",
+            "technologies": ["js"],
+            "imageUrl": "2.png",
+            "link": "https://pig-game-dev.netlify.app"
+        },
+        {
+            "id": "3",
+            "name": "Bankist Account",
+            "type": "study",
+            "additionalInfo": "1) login: js, pin: 1111 2) login: jd, pin: 2222",
+            "technologies": ["js"],
+            "imageUrl": "3.png",
+            "link": "https://bankist-account.netlify.app"
+        },
+        {
+            "id": "4",
+            "name": "Bankist Web",
+            "type": "study",
+            "technologies": ["js"],
+            "imageUrl": "4.png",
+            "link": "https://bankist-web.netlify.app/"
+        },
+        {
+            "id": "5",
+            "name": "Mapty",
+            "type": "study",
+            "technologies": ["js"],
+            "imageUrl": "5.png",
+            "link": "https://mapty-dev.netlify.app"
+        },
+        {
+            "id": "6",
+            "name": "Asynchronous Javascript",
+            "type": "study",
+            "technologies": ["js"],
+            "imageUrl": "6.png",
+            "link": "https://asynchronous-javascript.netlify.app"
+        },
+        {
+            "id": "7",
+            "name": "Recipes",
+            "type": "study",
+            "technologies": ["js"],
+            "imageUrl": "7.png",
+            "link": "https://recipes-v1.netlify.app"
+        },
+        {
+            "id": "8",
+            "name": "Ideal Variant Company",
+            "type": "work",
+            "technologies": ["joomla", "html5", "css3", "js"],
+            "imageUrl": "8.png",
+            "link": "http://ideal-variant39.ru"
+        },
+        {
+            "id": "9",
+            "name": "Advocate Service",
+            "type": "work",
+            "technologies": ["wordpress", "html5", "css3", "js"],
+            "imageUrl": "9.png",
+            "link": "http://advokatkleshnya39.ru"
+        },
+        {
+            "id": "10",
+            "name": "Mistral Pawilony Company",
+            "type": "work",
+            "technologies": ["wordpress", "html5", "css3", "js"],
+            "imageUrl": "10.png",
+            "link": "https://mistralpawilon.pl/"
+        },
+        {
+            "id": "11",
+            "name": "My Solo Company",
+            "type": "work",
+            "technologies": ["joomla", "html5", "css3", "js"],
+            "imageUrl": "11.png",
+            "link": "http://mysolo39.ru"
+        },
+        {
+            "id": "12",
+            "name": "TodoList",
+            "type": "study",
+            "technologies": ["js", "react"],
+            "additionalInfo": "React App with Redux and saving todos in the local storage",
+            "imageUrl": "12.png",
+            "link": "https://todolist14062021.netlify.app/"
+        },
+        {
+            "id": "13",
+            "name": "Gatsby Blog",
+            "type": "study",
+            "technologies": ["js", "react"],
+            "additionalInfo": "React Blog using Gatsby and GraphQL technologies",
+            "imageUrl": "13.png",
+            "link": "https://gatsby-blog-reactjs.netlify.app/"
+        },
+        {
+            "id": "14",
+            "name": "Shop",
+            "type": "study",
+            "technologies": ["js", "react"],
+            "additionalInfo": "React Shop using Redux, Firebase, Stripe payment and PWA technologies",
+            "imageUrl": "14.png",
+            "link": "https://crwn-clothing-live2021.herokuapp.com/"
+        }
+    ]
+}

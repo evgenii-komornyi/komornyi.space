@@ -1,0 +1,403 @@
+{
+    "experience": [
+        {
+            "id": 1,
+            "job": ".Net Core developer",
+            "specification": "Accenture Internship",
+            "periodFrom": "April 2022",
+            "periodTo": "August 2022",
+            "description": "Worked on the programs according to specification and created the unit tests."
+        },
+        {
+            "id": 2,
+            "job": ".Net Core developer",
+            "specification": "Accenture Bootcamp",
+            "periodFrom": "January 2022",
+            "periodTo": "February 2022",
+            "description": "Worked on the programs according to specification and created the unit tests. Also created RESTful API applications."
+        },
+        {
+            "id": 3,
+            "job": "ReactJS developer",
+            "specification": "RTU ETF Institute of Radioelectronics",
+            "periodFrom": "June 2021",
+            "periodTo": "December 2021",
+            "description": "Worked on a web-based UI for an IoT Seal Deterring System."
+        },
+        {
+            "id": 4,
+            "job": "Webmaster",
+            "specification": "Freelance - IT technologies",
+            "periodFrom": "July 2017",
+            "periodTo": "August 2019",
+            "description": "Worked on the web pages based on Joomla, Wordpress, and Gantry framework, or from the scratch on HTML. CSS and JQUERY. Content management SEO optimization."
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "institution": "Kyrgyz State Technical University named after I.Razzakov",
+            "grade": "Bachelor",
+            "faculty": "Information / Media",
+            "yearStart": 2013,
+            "yearEnd": 2016,
+            "specification": "Polygraphy",
+            "high": true
+        },
+        {
+            "id": 2,
+            "institution": "Kyrgyz-Russian Slavic University",
+            "grade": "Master",
+            "faculty": "Mathematics / natural sciences, Natural Sciences",
+            "yearStart": 2008,
+            "yearEnd": 2013,
+            "specification": "Meteorology and environment protection",
+            "high": true
+        },
+        {
+            "id": 3,
+            "institution": "Secondary School № 31 of Bishkek",
+            "grade": "Secondary",
+            "yearStart": 1998,
+            "yearEnd": 2008,
+            "high": false
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "course": "Complete React Native in 2022",
+            "progress": "in-progress",
+            "progressValue": 50
+        },
+        {
+            "id": 2,
+            "course": "Complete React Developer in 2021",
+            "institution": "Udemy",
+            "year": 2021,
+            "certificate": "reactjs.jpg",
+            "progress": "complete"
+        },
+        {
+            "id": 3,
+            "course": "Complete Javascript Course 2021",
+            "institution": "Udemy",
+            "year": 2021,
+            "certificate": "javascript.jpg",
+            "progress": "complete"
+        },
+        {
+            "id": 4,
+            "course": "Agile - Java Web Development",
+            "institution": "JavaGuru",
+            "year": 2020,
+            "certificate": "java2.png",
+            "progress": "complete"
+        },
+        {
+            "id": 5,
+            "course": "Java. Basics of OOP",
+            "institution": "JavaGuru",
+            "year": 2019,
+            "certificate": "java1.jpg",
+            "progress": "complete"
+        }
+    ],
+    "languages": [
+        {
+            "id": 1,
+            "language": "Russian",
+            "level": "Native language.",
+            "icon": "russian.png"
+        },
+        {
+            "id": 2,
+            "language": "English",
+            "level": "Can make some mistakes, mix up the tenses and have a limited vocabulary. But otherwise I can communicate and have a good understanding of the written and spoken texts.",
+            "icon": "english.png"
+        },
+        {
+            "id": 3,
+            "language": "Latvian",
+            "level": "I have A1 category. Can understand and discuss simple things.",
+            "icon": "latvian.png"
+        }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "skill": "Javascript",
+            "keywords": ["frontend", "js", "UI"],
+            "icon": "javascript.png",
+            "main": true,
+            "favorite": true
+        },
+        {
+            "id": 2,
+            "skill": "ReactJS",
+            "keywords": ["frontend", "js", "UI"],
+            "icon": "react.png",
+            "main": true,
+            "favorite": true
+        },
+        {
+            "id": 3,
+            "skill": "NodeJS",
+            "keywords": ["backend", "js"],
+            "icon": "nodejs.png",
+            "main": true,
+            "favorite": true
+        },
+        {
+            "id": 4,
+            "skill": "C#",
+            "keywords": ["backend", "c#"],
+            "icon": "c-sharp.png",
+            "main": true,
+            "favorite": true
+        },
+        {
+            "id": 5,
+            "skill": "HTML5",
+            "keywords": ["frontend", "html", "UI"],
+            "icon": "html5.png",
+            "main": true,
+            "favorite": false
+        },
+        {
+            "id": 6,
+            "skill": "CSS3",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "icon": "css3.png",
+            "main": true,
+            "favorite": false
+        },
+        {
+            "id": 7,
+            "skill": "Java",
+            "keywords": ["backend", "java"],
+            "icon": "java.png",
+            "main": true,
+            "favorite": false
+        },
+        {
+            "id": 8,
+            "skill": "SQL",
+            "keywords": ["database", "sql"],
+            "icon": "sql.png",
+            "main": true,
+            "favorite": false
+        },
+        {
+            "id": 9,
+            "skill": "RestAPI",
+            "keywords": ["backend", "frontend", "c#", "java", "json", "js"],
+            "icon": "rest-api.png",
+            "main": true,
+            "favorite": true
+        },
+        {
+            "id": 10,
+            "skill": "Material UI",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 11,
+            "skill": "UIkit",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 12,
+            "skill": "Hibernate",
+            "keywords": ["backend", "java"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 13,
+            "skill": "Entity Framework",
+            "keywords": ["backend", "c#"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 14,
+            "skill": "Spring",
+            "keywords": ["backend", "java"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 15,
+            "skill": "Mockito",
+            "keywords": ["backend", "java", "test"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 16,
+            "skill": "Moq",
+            "keywords": ["backend", "c#", "test"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 17,
+            "skill": "JUnit",
+            "keywords": ["backend", "java", "c#", "test"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 18,
+            "skill": "Ajax",
+            "keywords": ["frontend", "js"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 19,
+            "skill": "JSON",
+            "keywords": ["frontend", "backend", "java", "c#", "js"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 20,
+            "skill": "MS Office",
+            "keywords": ["os"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 21,
+            "skill": "MS SQL",
+            "keywords": ["backend", "sql", "database"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 22,
+            "skill": "MySQL",
+            "keywords": ["backend", "sql", "c#", "java", "database"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 23,
+            "skill": "Linux",
+            "keywords": ["os"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 24,
+            "skill": "Windows",
+            "keywords": ["os"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 25,
+            "skill": "Joomla",
+            "keywords": ["frontend", "backend", "html", "css", "js"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 26,
+            "skill": "Wordpress",
+            "keywords": ["frontend", "backend", "html", "css", "js"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 27,
+            "skill": "Git",
+            "keywords": ["git"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 28,
+            "skill": "Github",
+            "keywords": ["git"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 29,
+            "skill": "Gantry5",
+            "keywords": ["frontend", "backend", "html", "css", "js"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 30,
+            "skill": "Redux",
+            "keywords": ["frontend", "js"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 31,
+            "skill": "JEST",
+            "keywords": ["frontend", "js", "test"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 32,
+            "skill": "Bootstrap",
+            "keywords": ["frontend", "css", "html", "js", "UI"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 33,
+            "skill": "SASS",
+            "keywords": ["frontend", "css", "UI", "html"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 34,
+            "skill": "MongoDB",
+            "keywords": ["database", "nosql", "backend"],
+            "main": false,
+            "favorite": false
+        },
+        {
+            "id": 35,
+            "skill": "Axios",
+            "keywords": ["js", "frontend"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 36,
+            "skill": "XUnit",
+            "keywords": ["backend", "java", "c#", "test"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 37,
+            "skill": "LinQ",
+            "keywords": ["backend", "c#"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 38,
+            "skill": "Zustand",
+            "keywords": ["js", "frontend"],
+            "main": false,
+            "favorite": true
+        }
+    ]
+}
