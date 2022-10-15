@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid, Button, Menu, MenuItem } from '@mui/material';
+import { useAnchorEl } from '../../../hooks/useAnchorEl';
 
 const FilterByProgress = ({
     data,
@@ -9,22 +10,12 @@ const FilterByProgress = ({
     setFilter,
     setYear,
 }) => {
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+    const [anchorEl, open, handleClick, handleClose] = useAnchorEl();
 
     const progressUnique = new Set();
     data.map(book => progressUnique.add(book.progress));
 
     const handleProgress = e => {
-        e.preventDefault();
         const { progress } = e.target.dataset;
         setBooks(filterBooks(progress));
         setFilter(progress);

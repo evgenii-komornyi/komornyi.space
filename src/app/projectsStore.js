@@ -11,7 +11,10 @@ const projectsStore = set => ({
     fetchProjects: async () => {
         const { data } = await getProjects();
 
-        set({ projects: data, isLoaded: true });
+        set({
+            projects: data,
+            isLoaded: true,
+        });
     },
 });
 

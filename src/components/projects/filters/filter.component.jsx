@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Grid, Button, Menu, MenuItem } from '@mui/material';
+import { Grid, Button } from '@mui/material';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Project from '../project.component';
+import { FiltersMenu } from '../../filters-menu/filters-menu.component';
 
 import useProjectsStore from '../../../app/projectsStore';
 
@@ -25,21 +26,12 @@ const Filter = () => {
         );
     };
 
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleFilterClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleFilterClose = () => {
-        setAnchorEl(null);
-    };
-
-    const handleClick = e => {
-        e.preventDefault();
+    const handleApplyFilter = e => {
         setFilteredProjects(filterProjects(e.target.textContent));
-        setAnchorEl(null);
+    };
+
+    const resetFilter = () => {
+        setFilteredProjects(null);
     };
 
     return (
@@ -53,69 +45,27 @@ const Filter = () => {
             >
                 {matches ? (
                     <>
-                        <Button
-                            variant="outlined"
-                            onClick={() => setFilteredProjects(null)}
-                        >
+                        <Button variant="outlined" onClick={resetFilter}>
                             all
                         </Button>
 
-                        {[...filterUnique].sort().map((technology, i) => (
+                        {[...filterUnique].sort().map((technology, index) => (
                             <Button
-                                key={i}
+                                key={index}
                                 variant="outlined"
-                                onClick={e => handleClick(e)}
+                                onClick={handleApplyFilter}
                             >
                                 {technology}
                             </Button>
                         ))}
                     </>
                 ) : (
-                    <>
-                        <Button
-                            id="positioned-button"
-                            aria-controls="positioned-menu"
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleFilterClick}
-                        >
-                            Filter projects by
-                        </Button>
-                        <Menu
-                            id="positioned-menu"
-                            aria-labelledby="positioned-button"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleFilterClose}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                        >
-                            <MenuItem
-                                sx={{ textTransform: 'uppercase' }}
-                                onClick={() => setFilteredProjects(null)}
-                            >
-                                all
-                            </MenuItem>
-                            {[...filterUnique].map((technology, i) => (
-                                <MenuItem
-                                    key={i}
-                                    variant="outlined"
-                                    sx={{
-                                        textTransform: 'uppercase',
-                                    }}
-                                    onClick={e => handleClick(e)}
-                                >
-                                    {technology}
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </>
+                    <FiltersMenu
+                        buttonText="filter projects by"
+                        arrayMenus={[...filterUnique]}
+                        resetFilters={resetFilter}
+                        applyFilter={handleApplyFilter}
+                    />
                 )}
             </Grid>
 

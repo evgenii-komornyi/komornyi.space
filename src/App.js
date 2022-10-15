@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 import useProjectsStore from './app/projectsStore';
 import useBooksStore from './app/booksStore';
-import useHolidaysStore from './app/holidaysStore';
 
 import { Header } from './components/header/header.component';
 
@@ -49,7 +48,6 @@ const App = () => {
 
     const isProjectsLoaded = useProjectsStore(state => state.isLoaded);
     const isBooksLoaded = useBooksStore(state => state.isLoaded);
-    const isHolidaysLoaded = useHolidaysStore(state => state.isLoaded);
 
     const { isOpen } = useMenuStore(state => state.isOpen);
 
@@ -58,11 +56,7 @@ const App = () => {
             <CssBaseline />
             <Header />
             <Main open={isOpen}>
-                {isProjectsLoaded && isBooksLoaded && isHolidaysLoaded ? (
-                    <Routes />
-                ) : (
-                    <Loader />
-                )}
+                {isProjectsLoaded && isBooksLoaded ? <Routes /> : <Loader />}
             </Main>
             <Footer />
         </ThemeProvider>

@@ -14,25 +14,14 @@ import { CopyrightTwoTone, GitHub } from '@mui/icons-material';
 
 import { useMediaQuery } from '@mui/material';
 
+import { useAnchorEl } from '../../hooks/useAnchorEl';
+
+const techStack = ['MongoDB', 'ExpressJS', 'NodeJS', 'ReactJS', 'MaterialUI'];
+
 export const Footer = () => {
     const matches = useMediaQuery('(min-width: 769px)');
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-    const techStack = [
-        'MongoDB',
-        'ExpressJS',
-        'NodeJS',
-        'ReactJS',
-        'MaterialUI',
-    ];
+    const [anchorEl, open, handleClick, handleClose] = useAnchorEl();
 
     return (
         <AppBar
@@ -51,7 +40,7 @@ export const Footer = () => {
                 </Typography>
                 <Box sx={{ textAlign: 'center', flexGrow: 1 }}>
                     <Button
-                        href="https://github.com/evgenii-komornyi/komornyi.space-client"
+                        href="https://github.com/evgenii-komornyi/komornyi.space"
                         target="_blank"
                         size="small"
                         variant="outlined"

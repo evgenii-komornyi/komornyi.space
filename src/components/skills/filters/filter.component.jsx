@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Grid, ButtonGroup, Button, Menu, MenuItem } from '@mui/material';
+import { Grid, ButtonGroup, Button } from '@mui/material';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import data from '../../../data/cv.json';
 
 import Skill from '../skill.component';
+import { FiltersMenu } from '../../filters-menu/filters-menu.component';
 
 const Filter = () => {
     const matches = useMediaQuery('(min-width: 1366px)');
@@ -22,21 +23,12 @@ const Filter = () => {
 
     const [fSkills, setFilteredSkills] = useState(null);
 
-    const handleClick = e => {
-        e.preventDefault();
+    const handleApplyFilter = e => {
         setFilteredSkills(filterSkills(e.target.textContent));
-        setAnchorEl(null);
     };
 
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleFilterClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleFilterClose = () => {
-        setAnchorEl(null);
+    const resetFilter = () => {
+        setFilteredSkills(null);
     };
 
     return (
@@ -50,67 +42,27 @@ const Filter = () => {
             >
                 {matches ? (
                     <ButtonGroup size="medium" aria-label="medium button group">
-                        <Button
-                            variant="outlined"
-                            onClick={() => setFilteredSkills(null)}
-                        >
+                        <Button variant="outlined" onClick={resetFilter}>
                             all
                         </Button>
 
-                        {[...keywordsUnique].map((keyword, i) => (
+                        {[...keywordsUnique].map((keyword, index) => (
                             <Button
-                                key={i}
+                                key={index}
                                 variant="outlined"
-                                onClick={e => handleClick(e)}
+                                onClick={handleApplyFilter}
                             >
                                 {keyword}
                             </Button>
                         ))}
                     </ButtonGroup>
                 ) : (
-                    <>
-                        <Button
-                            id="positioned-button"
-                            aria-controls="positioned-menu"
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleFilterClick}
-                        >
-                            Filter skills by
-                        </Button>
-                        <Menu
-                            id="positioned-menu"
-                            aria-labelledby="positioned-button"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleFilterClose}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                        >
-                            <MenuItem
-                                onClick={() => setFilteredSkills(null)}
-                                sx={{ textTransform: 'uppercase' }}
-                            >
-                                all
-                            </MenuItem>
-                            {[...keywordsUnique].map((keyword, i) => (
-                                <MenuItem
-                                    key={i}
-                                    variant="outlined"
-                                    onClick={e => handleClick(e)}
-                                    sx={{ textTransform: 'uppercase' }}
-                                >
-                                    {keyword}
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </>
+                    <FiltersMenu
+                        buttonText="filter skills by"
+                        arrayMenus={[...keywordsUnique]}
+                        resetFilters={resetFilter}
+                        applyFilters={handleApplyFilter}
+                    />
                 )}
             </Grid>
 

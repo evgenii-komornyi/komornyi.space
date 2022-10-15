@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Grid, Typography } from '@mui/material';
 
 import ProjectCard from './projectCard.component';
@@ -49,4 +49,4 @@ const Project = ({ projects }) => {
     );
 };
 
-export default Project;
+export default memo(Project);

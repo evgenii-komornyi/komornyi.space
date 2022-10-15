@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid, Button, Menu, MenuItem } from '@mui/material';
+import { useAnchorEl } from '../../../hooks/useAnchorEl';
 
 const FilterByYear = ({
     data,
@@ -9,16 +10,7 @@ const FilterByYear = ({
     setFilter,
     setProgress,
 }) => {
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+    const [anchorEl, open, handleClick, handleClose] = useAnchorEl();
 
     const yearsUnique = new Set();
     data.map(
