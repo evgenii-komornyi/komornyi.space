@@ -14,6 +14,8 @@ import { Footer } from './components/footer/footer.component';
 import { Routes } from './routes/routes';
 import useMenuStore from './app/menuStore';
 
+import './styles/app.css';
+
 const darkTheme = createTheme({
     palette: {
         mode: 'dark',
