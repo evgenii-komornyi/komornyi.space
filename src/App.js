@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 
 import useProjectsStore from './app/projectsStore';
 import useBooksStore from './app/booksStore';
+import useMenuStore from './app/menuStore';
+
+import { useCancelToken } from './hooks/useCancelToken';
 
 import { Header } from './components/header/header.component';
 
@@ -12,7 +15,6 @@ import { Main } from './App.styles';
 import { Loader } from './components/loader/loader.component';
 import { Footer } from './components/footer/footer.component';
 import { Routes } from './routes/routes';
-import useMenuStore from './app/menuStore';
 
 import './styles/app.css';
 
@@ -32,21 +34,17 @@ const App = () => {
     const { fetchProjects } = useProjectsStore();
     const { fetchBooks } = useBooksStore();
 
-    useEffect(() => {
-        try {
-            fetchBooks();
-        } catch (error) {
-            console.log(error.message);
-        }
-    }, [fetchBooks]);
+    const { newCancelToken, isCancel } = useCancelToken();
 
     useEffect(() => {
-        try {
-            fetchProjects();
-        } catch (error) {
-            console.log(error.message);
-        }
-    }, [fetchProjects]);
+        fetchBooks(newCancelToken(), isCancel);
+        console.log('fetch books');
+    }, [fetchBooks, newCancelToken, isCancel]);
+
+    useEffect(() => {
+        fetchProjects(newCancelToken(), isCancel);
+        console.log('fetch projects');
+    }, [fetchProjects, newCancelToken, isCancel]);
 
     const isProjectsLoaded = useProjectsStore(state => state.isLoaded);
     const isBooksLoaded = useBooksStore(state => state.isLoaded);

@@ -8,13 +8,17 @@ const projectsStore = set => ({
     projects: [],
     isLoaded: false,
 
-    fetchProjects: async () => {
-        const { data } = await getProjects();
+    fetchProjects: async (cancelationToken, isCancel) => {
+        try {
+            const { data } = await getProjects(cancelationToken);
 
-        set({
-            projects: data,
-            isLoaded: true,
-        });
+            set({
+                projects: data,
+                isLoaded: true,
+            });
+        } catch (e) {
+            if (isCancel(e)) return;
+        }
     },
 });
 

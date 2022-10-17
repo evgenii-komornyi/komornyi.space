@@ -13,6 +13,8 @@ import {
     Avatar,
 } from '@mui/material';
 
+import { useCancelToken } from '../../../hooks/useCancelToken';
+
 import { Album } from '@mui/icons-material';
 
 import { getUser, getLibrary } from '../../../api/lastFM';
@@ -21,19 +23,24 @@ import { Loader } from '../../loader/loader.component';
 
 const Profile = () => {
     const [profile, setUser] = useState({ user: null, totalArtists: null });
+    const { newCancelToken, isCancel } = useCancelToken();
 
     useEffect(() => {
         const fetchData = async () => {
-            const userData = await getUser();
-            const artistsData = await getLibrary();
+            try {
+                const userData = await getUser(newCancelToken());
+                const artistsData = await getLibrary(newCancelToken());
 
-            setUser({
-                user: userData.data.user,
-                totalArtists: artistsData.data.artists['@attr'].total,
-            });
+                setUser({
+                    user: userData.data.user,
+                    totalArtists: artistsData.data.artists['@attr'].total,
+                });
+            } catch (e) {
+                if (isCancel(e)) return;
+            }
         };
         fetchData();
-    }, []);
+    }, [newCancelToken, isCancel]);
 
     const unixTime = new Date(
         profile.user && profile.user.registered['unixtime'] * 1000

@@ -13,6 +13,8 @@ import {
     CardActions,
 } from '@mui/material';
 
+import { useCancelToken } from '../../../hooks/useCancelToken';
+
 import { ExpandMore, LibraryMusicTwoTone } from '@mui/icons-material';
 
 import { getLibrary, getArtist } from '../../../api/lastFM';
@@ -21,14 +23,20 @@ import { Loader } from '../../loader/loader.component';
 
 const Library = () => {
     const [library, setLibrary] = useState(null);
+    const { newCancelToken, isCancel } = useCancelToken();
 
     useEffect(() => {
         const fetchData = async () => {
-            const { data } = await getLibrary();
-            setLibrary(data);
+            try {
+                const { data } = await getLibrary(newCancelToken());
+
+                setLibrary(data);
+            } catch (e) {
+                if (isCancel(e)) return;
+            }
         };
         fetchData();
-    }, []);
+    }, [newCancelToken, isCancel]);
 
     const [expanded, setExpanded] = useState(false);
 

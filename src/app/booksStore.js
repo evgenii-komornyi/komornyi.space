@@ -8,10 +8,14 @@ const booksStore = set => ({
     books: [],
     isLoaded: false,
 
-    fetchBooks: async () => {
-        const { data } = await getBooks();
+    fetchBooks: async (cancelationToken, isCancel) => {
+        try {
+            const { data } = await getBooks(cancelationToken);
 
-        set({ books: data, isLoaded: true });
+            set({ books: data, isLoaded: true });
+        } catch (e) {
+            if (isCancel(e)) return;
+        }
     },
 });
 
