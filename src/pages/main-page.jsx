@@ -1,18 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Grid } from '@mui/material';
 
+import { HelmetSeo } from '../components/helmet-seo/helmet-seo.component';
 import Jokes from '../components/jokes/jokes.component';
 import LastProjects from '../components/projects/lastProjects.component';
 import LastReadBooks from '../components/books/lastReadBooks.component';
 import { Season } from '../components/season/season.component';
 
-const MainPage = ({ title }) => {
-    useEffect(() => {
-        document.title = title;
-    }, [title]);
-
+const MainPage = () => {
     return (
         <>
+            <HelmetSeo
+                title="Main page"
+                description="My ReactJS child with REST API and other features."
+                url="https://komornyi.space"
+            />
             <Season />
             <Container maxWidth="lg">
                 <Grid

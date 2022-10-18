@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 
 import useProjectsStore from './app/projectsStore';
 import useBooksStore from './app/booksStore';
@@ -51,14 +52,22 @@ const App = () => {
 
     const { isOpen } = useMenuStore(state => state.isOpen);
 
+    const helmetContext = {};
+
     return (
         <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-            <Header />
-            <Main open={isOpen}>
-                {isProjectsLoaded && isBooksLoaded ? <Routes /> : <Loader />}
-            </Main>
-            <Footer />
+            <HelmetProvider context={helmetContext}>
+                <CssBaseline />
+                <Header />
+                <Main open={isOpen}>
+                    {isProjectsLoaded && isBooksLoaded ? (
+                        <Routes />
+                    ) : (
+                        <Loader />
+                    )}
+                </Main>
+                <Footer />
+            </HelmetProvider>
         </ThemeProvider>
     );
 };

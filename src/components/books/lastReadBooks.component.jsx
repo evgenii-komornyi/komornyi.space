@@ -5,12 +5,17 @@ import BookCard from './bookCard.component';
 
 import { useStyles } from './books.styles';
 import useBooksStore from '../../app/booksStore';
+import { useHistory } from 'react-router-dom';
 
 const LastReadBooks = () => {
     const classes = useStyles();
     const { books } = useBooksStore();
 
-    const filteredBooks = books.filter((_, index) => index < 4);
+    const history = useHistory();
+
+    const filteredBooks = books
+        .filter(book => book.progress === 'complete')
+        .filter((_, index) => index < 4);
 
     return (
         <>
@@ -28,7 +33,10 @@ const LastReadBooks = () => {
                 xl={2}
                 sx={{ mt: 5, textAlign: 'center' }}
             >
-                <Button variant="outlined" href="/library">
+                <Button
+                    variant="outlined"
+                    onClick={() => history.push('/library')}
+                >
                     See all
                 </Button>
             </Grid>

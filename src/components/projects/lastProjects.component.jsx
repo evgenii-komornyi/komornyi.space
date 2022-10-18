@@ -5,10 +5,13 @@ import ProjectCard from './projectCard.component';
 
 import { useStyles } from './projects.styles';
 import useProjectsStore from '../../app/projectsStore';
+import { useHistory } from 'react-router-dom';
 
 const LastProjects = () => {
     const classes = useStyles();
     const projects = useProjectsStore(state => state.projects);
+
+    const history = useHistory();
 
     const filteredProjects = projects.filter((_, index) => index < 3);
 
@@ -28,7 +31,10 @@ const LastProjects = () => {
                 xl={2}
                 sx={{ mt: 5, textAlign: 'center' }}
             >
-                <Button variant="outlined" href="/projects">
+                <Button
+                    variant="outlined"
+                    onClick={() => history.push('/projects')}
+                >
                     See all
                 </Button>
             </Grid>

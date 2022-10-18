@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 
 import { useStyles } from './carousel.styles';
+import { useHistory } from 'react-router-dom';
 
 const Slide = ({
     currentIndex,
@@ -22,6 +23,8 @@ const Slide = ({
 
     const { hobbies } = slides;
     const arrLength = hobbies.length;
+
+    const history = useHistory();
 
     return (
         <>
@@ -87,7 +90,12 @@ const Slide = ({
                                                         mr: 'auto',
                                                         ml: 'auto',
                                                     }}
-                                                    href={ctnt.linkUrl}
+                                                    component="a"
+                                                    onClick={() =>
+                                                        history.push(
+                                                            ctnt.linkUrl
+                                                        )
+                                                    }
                                                 >
                                                     {ctnt.linkText}
                                                 </Button>

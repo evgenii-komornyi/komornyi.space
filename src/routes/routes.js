@@ -8,39 +8,39 @@ import ProjectsPage from '../pages/projects';
 import BooksPage from '../pages/books';
 import MusicPage from '../pages/music';
 
+const routes = [
+    {
+        path: '/',
+        component: MainPage,
+    },
+    {
+        path: '/about',
+        component: AboutMePage,
+    },
+    {
+        path: '/contacts',
+        component: ContactsPage,
+    },
+    {
+        path: '/projects',
+        component: ProjectsPage,
+    },
+    {
+        path: '/library',
+        component: BooksPage,
+    },
+    {
+        path: '/music',
+        component: MusicPage,
+    },
+];
+
 export const Routes = memo(() => {
     return (
         <Switch>
-            <Route
-                exact
-                path="/"
-                component={() => <MainPage title="Main page" />}
-            />
-            <Route
-                exact
-                path="/about"
-                component={() => <AboutMePage title="About me" />}
-            />
-            <Route
-                exact
-                path="/contacts"
-                component={() => <ContactsPage title="My contacts" />}
-            />
-            <Route
-                exact
-                path="/projects"
-                component={() => <ProjectsPage title="My projects" />}
-            />
-            <Route
-                exact
-                path="/library"
-                component={() => <BooksPage title="My library" />}
-            />
-            <Route
-                exact
-                path="/music"
-                component={() => <MusicPage title="My music from LastFM" />}
-            />
+            {routes.map(({ path, component }, key) => (
+                <Route exact key={key} path={path} component={component} />
+            ))}
         </Switch>
     );
 });
