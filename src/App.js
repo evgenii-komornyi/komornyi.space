@@ -39,12 +39,10 @@ const App = () => {
 
     useEffect(() => {
         fetchBooks(newCancelToken(), isCancel);
-        console.log('fetch books');
     }, [fetchBooks, newCancelToken, isCancel]);
 
     useEffect(() => {
         fetchProjects(newCancelToken(), isCancel);
-        console.log('fetch projects');
     }, [fetchProjects, newCancelToken, isCancel]);
 
     const isProjectsLoaded = useProjectsStore(state => state.isLoaded);
