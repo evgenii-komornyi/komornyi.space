@@ -4,32 +4,32 @@
             "id": 1,
             "job": ".Net Core developer",
             "specification": "Accenture Internship",
-            "periodFrom": "April 2022",
-            "periodTo": "August 2022",
+            "periodFrom": "2022-04",
+            "periodTo": "2022-08",
             "description": "Worked on the programs according to specification and created the unit tests."
         },
         {
             "id": 2,
             "job": ".Net Core developer",
             "specification": "Accenture Bootcamp",
-            "periodFrom": "January 2022",
-            "periodTo": "February 2022",
+            "periodFrom": "2022-01",
+            "periodTo": "2022-02",
             "description": "Worked on the programs according to specification and created the unit tests. Also created RESTful API applications."
         },
         {
             "id": 3,
             "job": "ReactJS developer",
             "specification": "RTU ETF Institute of Radioelectronics",
-            "periodFrom": "June 2021",
-            "periodTo": "December 2021",
+            "periodFrom": "2021-06",
+            "periodTo": "2021-12",
             "description": "Worked on a web-based UI for an IoT Seal Deterring System."
         },
         {
             "id": 4,
             "job": "Webmaster",
             "specification": "Freelance - IT technologies",
-            "periodFrom": "July 2017",
-            "periodTo": "August 2019",
+            "periodFrom": "2017-07",
+            "periodTo": "2019-08",
             "description": "Worked on the web pages based on Joomla, Wordpress, and Gantry framework, or from the scratch on HTML. CSS and JQUERY. Content management SEO optimization."
         }
     ],

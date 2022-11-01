@@ -4,47 +4,13 @@ import { Grid, Typography } from '@mui/material';
 import { useStyles } from './experience.styles';
 
 import data from '../../data/cv.json';
+import {
+    formatDateToString,
+    fullExperiencedDate,
+} from '../../helpers/dateHelper';
 
 const Experience = () => {
     const classes = useStyles();
-
-    const yearsDiff = (dateFrom, dateTo) => {
-        let dateFromFormatted = new Date(dateFrom);
-        let dateToFormatted = new Date(dateTo);
-        let yearsDiff =
-            dateToFormatted.getFullYear() - dateFromFormatted.getFullYear();
-
-        return yearsDiff;
-    };
-
-    const monthsDiff = (dateFrom, dateTo) => {
-        let dateFromFormatted = new Date(dateFrom);
-        let dateToFormatted = new Date(dateTo);
-        let years = yearsDiff(dateFrom, dateTo);
-        let months =
-            years * 12 +
-            (dateToFormatted.getMonth() - dateFromFormatted.getMonth());
-
-        return months;
-    };
-
-    const fullExperiencedDate = (dateFrom, dateTo) => {
-        const monthsDifference = monthsDiff(dateFrom, dateTo);
-
-        const years = Math.floor(monthsDifference / 12);
-        const months = monthsDifference % 12;
-
-        const yearsFormat = `${years} ${years === 1 ? 'year' : 'years'}`;
-        const monthsFormat = `${months} ${months === 1 ? 'month' : 'months'}`;
-
-        if (years === 0) {
-            return monthsFormat;
-        } else if (months === 0) {
-            return yearsFormat;
-        } else {
-            return `${yearsFormat} ${monthsFormat}`;
-        }
-    };
 
     return (
         <Grid container sx={{ mt: 5 }}>
@@ -65,9 +31,11 @@ const Experience = () => {
                         <div className={classes.period}>
                             Period:{' '}
                             <span>
-                                {`${exp.periodFrom} - ${
+                                {`${formatDateToString(
+                                    exp.periodFrom
+                                )} - ${formatDateToString(
                                     exp.periodTo
-                                }. (${fullExperiencedDate(
+                                )}. (${fullExperiencedDate(
                                     exp.periodFrom,
                                     exp.periodTo
                                 )})`}
