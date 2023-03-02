@@ -67,8 +67,10 @@
         {
             "id": 1,
             "course": "Complete React Native in 2022",
-            "progress": "in-progress",
-            "progressValue": 50
+            "institution": "Udemy",
+            "year": 2023,
+            "certificate": "react-native.jpg",
+            "progress": "complete"
         },
         {
             "id": 2,
@@ -119,7 +121,7 @@
         {
             "id": 3,
             "language": "Latvian",
-            "level": "I have A1 category. Can understand and discuss simple things.",
+            "level": "I have A2 category. Can understand and discuss simple things.",
             "icon": "latvian.png"
         }
     ],
@@ -395,6 +397,13 @@
         {
             "id": 38,
             "skill": "Zustand",
+            "keywords": ["js", "frontend"],
+            "main": false,
+            "favorite": true
+        },
+        {
+            "id": 39,
+            "skill": "React Native Android",
             "keywords": ["js", "frontend"],
             "main": false,
             "favorite": true
