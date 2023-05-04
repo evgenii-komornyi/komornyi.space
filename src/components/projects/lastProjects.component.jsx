@@ -13,7 +13,10 @@ const LastProjects = () => {
 
     const history = useHistory();
 
-    const filteredProjects = projects.filter((_, index) => index < 3);
+    const filteredProjects = projects
+        .filter(project => project.type === 'study')
+        .reverse()
+        .filter((_, index) => index < 3);
 
     return (
         <>

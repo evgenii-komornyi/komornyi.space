@@ -14,6 +14,7 @@ const LastReadBooks = () => {
     const history = useHistory();
 
     const filteredBooks = books
+        .sort((a, b) => b.year - a.year)
         .filter(book => book.progress === 'complete')
         .filter((_, index) => index < 4);
 

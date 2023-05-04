@@ -1,331 +1,385 @@
-{
-    "books": [
-        {
-            "id": 42,
-            "title": "Gravity Falls. Time Pirate Treasures",
-            "author": "Dipper and Mabel",
-            "image": "time_pirate_treasures.png",
-            "progress": "complete",
-            "year": 2021
-        },
-        {
-            "id": 41,
-            "title": "House of Small Shadows",
-            "author": "Adam Nevill",
-            "image": "house_of_small_shadows.jpg",
-            "progress": "complete",
-            "year": 2021
-        },
-        {
-            "id": 40,
-            "title": "The Monstrumologist",
-            "author": "Rick Yancey",
-            "image": "monstrumologist1.jpg",
-            "progress": "complete",
-            "year": 2021
-        },
-        {
-            "id": 39,
-            "title": "The Monstrumologist: The Curse of the Wendigo",
-            "author": "Rick Yancey",
-            "image": "monstrumologist2.jpg",
-            "progress": "complete",
-            "year": 2021
-        },
-        {
-            "id": 38,
-            "title": "The Monstrumologist: The Isle of Blood",
-            "author": "Rick Yancey",
-            "image": "monstrumologist3.jpg",
-            "progress": "complete",
-            "year": 2021
-        },
-        {
-            "id": 37,
-            "title": "The Monstrumologist: The Final Descent",
-            "author": "Rick Yancey",
-            "image": "monstrumologist4.jpg",
-            "progress": "complete",
-            "year": 2021
-        },
-        {
-            "id": 36,
-            "title": "Clean Code",
-            "author": "Robert Martin",
-            "image": "clean_code.jpeg",
-            "progress": "complete",
-            "year": 2020
-        },
-        {
-            "id": 35,
-            "title": "Coraline",
-            "author": "Neil Gaiman",
-            "image": "coraline.jpeg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 34,
-            "title": "The Graveyard book",
-            "author": "Neil Gaiman",
-            "image": "graveyard_book.jpeg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 33,
-            "title": "Neverwhere",
-            "author": "Neil Gaiman",
-            "image": "neverwhere.jpg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 32,
-            "title": "More than 10 stories",
-            "author": "Robert Louis Stevenson",
-            "image": "stevenson.jpeg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 31,
-            "title": "Wimpy Steve Book 1: Trapped in Minecraft!",
-            "author": "Wimpy Steve",
-            "image": "minecraft1.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 30,
-            "title": "Wimpy Steve Book 2: Horsing Around!",
-            "author": "Wimpy Steve",
-            "image": "minecraft2.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 29,
-            "title": "Wimpy Steve Book 3: A Ruff Adventure!",
-            "author": "Wimpy Steve",
-            "image": "minecraft3.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 28,
-            "title": "Wimpy Steve Book 4: Lots of Ocelots!",
-            "author": "Wimpy Steve",
-            "image": "minecraft4.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 27,
-            "title": "Wimpy Steve Book 5: A Bad Hare Day!",
-            "author": "Wimpy Steve",
-            "image": "minecraft5.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 26,
-            "title": "Wimpy Steve Book 6: Minecraft Mysteries!",
-            "author": "Wimpy Steve",
-            "image": "minecraft6.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 25,
-            "title": "Wimpy Steve Book 7: Baffled and Bewitched!",
-            "author": "Wimpy Steve",
-            "image": "minecraft7.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 24,
-            "title": "Wimpy Steve Book 8: Snow Much Fun!",
-            "author": "Wimpy Steve",
-            "image": "minecraft8.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 23,
-            "title": "Wimpy Steve Book 9: Portal Panic!",
-            "author": "Wimpy Steve",
-            "image": "minecraft9.jpeg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 22,
-            "title": "Wimpy Steve Book 10: Ocean Commotion!",
-            "author": "Wimpy Steve",
-            "image": "minecraft10.jpg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 21,
-            "title": "Wimpy Steve Book 11: Mansion Mayhem!",
-            "author": "Wimpy Steve",
-            "image": "minecraft11.jpeg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 20,
-            "title": "Wimpy Steve Book 12: Eyes on the Prize!",
-            "author": "Wimpy Steve",
-            "image": "minecraft12.jpg",
-            "progress": "complete",
-            "year": 2019
-        },
-        {
-            "id": 19,
-            "title": "Wimpy Steve Book 13: Stronghold Surprise!",
-            "author": "Wimpy Steve",
-            "image": "minecraft13.jpeg",
-            "progress": "complete",
-            "year": 2020
-        },
-        {
-            "id": 18,
-            "title": "Wimpy Steve Book 14: The End!",
-            "author": "Wimpy Steve",
-            "image": "minecraft14.jpeg",
-            "progress": "complete",
-            "year": 2020
-        },
-        {
-            "id": 17,
-            "title": "Defense Against the Dark Arts: Fundamentals of Magical Thinking",
-            "author": "Alexandr Panchin",
-            "image": "defense_against_the_dark_arts.jpeg",
-            "progress": "complete",
-            "year": 2020
-        },
-        {
-            "id": 16,
-            "title": "Apofeniya",
-            "author": "Alexandr Panchin",
-            "image": "apofeniya.jpg",
-            "progress": "complete",
-            "year": 2020
-        },
-        {
-            "id": 15,
-            "title": "Elixirs Satan",
-            "author": "Gofman Ernst Teodor Amadey",
-            "image": "elixirs_satan.jpeg",
-            "progress": "complete",
-            "year": 2020
-        },
-        {
-            "id": 14,
-            "title": "Malleus Maleficarum - The Witch Hammer",
-            "author": "Jacob Sprenger, Heinrich Kramer",
-            "image": "witch_hammer.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 13,
-            "title": "Lovecraft - Small Collected Works",
-            "author": "Howard Phillips Lovecraft",
-            "image": "lovecraft_small.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 12,
-            "title": "Edgar Allan Poe - Small Collected Works",
-            "author": "Edgar Allan Poe",
-            "image": "poe_small.jpg",
-            "progress": "complete",
-            "year": 2015
-        },
-        {
-            "id": 11,
-            "title": "The Divine Comedy",
-            "author": "Dante Alighieri",
-            "image": "divine_comedy.jpeg",
-            "progress": "complete",
-            "year": 2018
-        },
-        {
-            "id": 10,
-            "title": "Ancient Egyptian Legends",
-            "author": "Margaret Murray",
-            "image": "egypt_legends.jpeg",
-            "progress": "complete",
-            "year": 2010
-        },
-        {
-            "id": 9,
-            "title": "A New Book of Horrors",
-            "author": "More than 10 authors",
-            "image": "new_horror_book.jpeg",
-            "progress": "in-progress"
-        },
-        {
-            "id": 8,
-            "title": "Original Fairy Tales Brothers Grimm",
-            "author": "Jacob and Wilhelm Grimm",
-            "image": "grimm.jpg",
-            "progress": "pending"
-        },
-        {
-            "id": 7,
-            "title": "The Lost Gods",
-            "author": "Brom",
-            "image": "lost_gods.jpg",
-            "progress": "pending"
-        },
-        {
-            "id": 6,
-            "title": "Souls Collector",
-            "author": "More than 10 authors",
-            "image": "souls_collector.jpeg",
-            "progress": "pending"
-        },
-        {
-            "id": 5,
-            "title": "Season of Blood",
-            "author": "Greg F. Gifune",
-            "image": "season_of_blood.jpg",
-            "progress": "pending"
-        },
-        {
-            "id": 4,
-            "title": "Stratagem",
-            "author": "Harro von Zenger",
-            "image": "stratagem.jpeg",
-            "progress": "in-progress"
-        },
-        {
-            "id": 3,
-            "title": "Hidden Reality",
-            "author": "Brian Greene",
-            "image": "hidden_reality.jpg",
-            "progress": "pending"
-        },
-        {
-            "id": 2,
-            "title": "Elegant Universe",
-            "author": "Brian Greene",
-            "image": "elegant_universe.jpg",
-            "progress": "pending"
-        },
-        {
-            "id": 1,
-            "title": "The Fabric of the Cosmos",
-            "author": "Brian Greene",
-            "image": "fabric_of_the_cosmos.gif",
-            "progress": "pending"
+[
+    {
+        "_id": "613a080798d9d6ab224bd678",
+        "title": "House of Small Shadows",
+        "author": "Adam Nevill",
+        "image": "house_of_small_shadows.jpg",
+        "progress": "complete",
+        "year": 2021,
+        "modified": {
+            "$date": {
+                "$numberLong": "1633007145528"
+            }
         }
-    ]
-}
+    },
+    {
+        "_id": "613a080798d9d6ab224bd680",
+        "title": "Neverwhere",
+        "author": "Neil Gaiman",
+        "image": "neverwhere.jpg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd694",
+        "title": "Lovecraft - Small Collected Works",
+        "author": "Howard Phillips Lovecraft",
+        "image": "lovecraft_small.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd67a",
+        "title": "The Monstrumologist: The Curse of the Wendigo",
+        "author": "Rick Yancey",
+        "image": "monstrumologist2.jpg",
+        "progress": "complete",
+        "year": 2021,
+        "modified": {
+            "$date": {
+                "$numberLong": "1633007122030"
+            }
+        }
+    },
+    {
+        "_id": "613a080798d9d6ab224bd67b",
+        "title": "The Monstrumologist: The Isle of Blood",
+        "author": "Rick Yancey",
+        "image": "monstrumologist3.jpg",
+        "progress": "complete",
+        "year": 2021,
+        "modified": {
+            "$date": {
+                "$numberLong": "1633007126945"
+            }
+        }
+    },
+    {
+        "_id": "613a080798d9d6ab224bd67f",
+        "title": "The Graveyard book",
+        "author": "Neil Gaiman",
+        "image": "graveyard_book.jpeg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd682",
+        "title": "Wimpy Steve Book 1: Trapped in Minecraft!",
+        "author": "Wimpy Steve",
+        "image": "minecraft1.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd68d",
+        "title": "Wimpy Steve Book 12: Eyes on the Prize!",
+        "author": "Wimpy Steve",
+        "image": "minecraft12.jpg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd695",
+        "title": "Edgar Allan Poe - Small Collected Works",
+        "author": "Edgar Allan Poe",
+        "image": "poe_small.jpg",
+        "progress": "complete",
+        "year": 2015
+    },
+    {
+        "_id": "613a080798d9d6ab224bd69f",
+        "title": "Elegant Universe",
+        "author": "Brian Greene",
+        "image": "elegant_universe.jpg",
+        "progress": "pending",
+        "year": null
+    },
+    {
+        "_id": "613a080798d9d6ab224bd68e",
+        "title": "Wimpy Steve Book 13: Stronghold Surprise!",
+        "author": "Wimpy Steve",
+        "image": "minecraft13.jpeg",
+        "progress": "complete",
+        "year": 2020
+    },
+    {
+        "_id": "613a080798d9d6ab224bd691",
+        "title": "Apofeniya",
+        "author": "Alexandr Panchin",
+        "image": "apofeniya.jpg",
+        "progress": "complete",
+        "year": 2020
+    },
+    {
+        "_id": "613a080798d9d6ab224bd693",
+        "title": "Malleus Maleficarum - The Witch Hammer",
+        "author": "Jacob Sprenger, Heinrich Kramer",
+        "image": "witch_hammer.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd69b",
+        "title": "Souls Collector",
+        "author": "More than 10 authors",
+        "image": "souls_collector.jpeg",
+        "progress": "complete",
+        "year": 2022
+    },
+    {
+        "_id": "613a080798d9d6ab224bd688",
+        "title": "Wimpy Steve Book 7: Baffled and Bewitched!",
+        "author": "Wimpy Steve",
+        "image": "minecraft7.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd68c",
+        "title": "Wimpy Steve Book 11: Mansion Mayhem!",
+        "author": "Wimpy Steve",
+        "image": "minecraft11.jpeg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd68f",
+        "title": "Wimpy Steve Book 14: The End!",
+        "author": "Wimpy Steve",
+        "image": "minecraft14.jpeg",
+        "progress": "complete",
+        "year": 2020
+    },
+    {
+        "_id": "613a080798d9d6ab224bd690",
+        "title": "Defense Against the Dark Arts: Fundamentals of Magical Thinking",
+        "author": "Alexandr Panchin",
+        "image": "defense_against_the_dark_arts.jpeg",
+        "progress": "complete",
+        "year": 2020
+    },
+    {
+        "_id": "613a080798d9d6ab224bd692",
+        "title": "Elixirs Satan",
+        "author": "Gofman Ernst Teodor Amadey",
+        "image": "elixirs_satan.jpeg",
+        "progress": "complete",
+        "year": 2020
+    },
+    {
+        "_id": "613a080798d9d6ab224bd69e",
+        "title": "Hidden Reality",
+        "author": "Brian Greene",
+        "image": "hidden_reality.jpg",
+        "progress": "pending",
+        "year": null
+    },
+    {
+        "_id": "613a080798d9d6ab224bd67c",
+        "title": "The Monstrumologist: The Final Descent",
+        "author": "Rick Yancey",
+        "image": "monstrumologist4.jpg",
+        "progress": "complete",
+        "year": 2021
+    },
+    {
+        "_id": "613a080798d9d6ab224bd67e",
+        "title": "Coraline",
+        "author": "Neil Gaiman",
+        "image": "coraline.jpeg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd679",
+        "title": "The Monstrumologist",
+        "author": "Rick Yancey",
+        "image": "monstrumologist1.jpg",
+        "progress": "complete",
+        "year": 2021
+    },
+    {
+        "_id": "613a080798d9d6ab224bd686",
+        "title": "Wimpy Steve Book 5: A Bad Hare Day!",
+        "author": "Wimpy Steve",
+        "image": "minecraft5.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd677",
+        "title": "Gravity Falls. Time Pirate Treasures",
+        "author": "Dipper and Mabel",
+        "image": "time_pirate_treasures.png",
+        "progress": "complete",
+        "year": 2021
+    },
+    {
+        "_id": "613a080798d9d6ab224bd684",
+        "title": "Wimpy Steve Book 3: A Ruff Adventure!",
+        "author": "Wimpy Steve",
+        "image": "minecraft3.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd687",
+        "title": "Wimpy Steve Book 6: Minecraft Mysteries!",
+        "author": "Wimpy Steve",
+        "image": "minecraft6.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd68a",
+        "title": "Wimpy Steve Book 9: Portal Panic!",
+        "author": "Wimpy Steve",
+        "image": "minecraft9.jpeg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd697",
+        "title": "Ancient Egyptian Legends",
+        "author": "Margaret Murray",
+        "image": "egypt_legends.jpeg",
+        "progress": "complete",
+        "year": 2010
+    },
+    {
+        "_id": "613a080798d9d6ab224bd69c",
+        "title": "Season of Blood",
+        "author": "Greg F. Gifune",
+        "image": "season_of_blood.jpg",
+        "progress": "pending",
+        "year": null
+    },
+    {
+        "_id": "613a080798d9d6ab224bd6a0",
+        "title": "The Fabric of the Cosmos",
+        "author": "Brian Greene",
+        "image": "fabric_of_the_cosmos.gif",
+        "progress": "pending",
+        "year": null
+    },
+    {
+        "_id": "613a080798d9d6ab224bd67d",
+        "title": "Clean Code",
+        "author": "Robert Martin",
+        "image": "clean_code.jpeg",
+        "progress": "complete",
+        "year": 2020
+    },
+    {
+        "_id": "613a080798d9d6ab224bd685",
+        "title": "Wimpy Steve Book 4: Lots of Ocelots!",
+        "author": "Wimpy Steve",
+        "image": "minecraft4.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd68b",
+        "title": "Wimpy Steve Book 10: Ocean Commotion!",
+        "author": "Wimpy Steve",
+        "image": "minecraft10.jpg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd698",
+        "title": "A New Book of Horrors",
+        "author": "More than 10 authors",
+        "image": "new_horror_book.jpeg",
+        "progress": "complete",
+        "year": 2021
+    },
+    {
+        "_id": "613a080798d9d6ab224bd699",
+        "title": "Original Fairy Tales Brothers Grimm",
+        "author": "Jacob and Wilhelm Grimm",
+        "image": "grimm.jpg",
+        "progress": "pending",
+        "year": null
+    },
+    {
+        "_id": "613a080798d9d6ab224bd683",
+        "title": "Wimpy Steve Book 2: Horsing Around!",
+        "author": "Wimpy Steve",
+        "image": "minecraft2.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd696",
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri",
+        "image": "divine_comedy.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "613a080798d9d6ab224bd69a",
+        "title": "The Lost Gods",
+        "author": "Brom",
+        "image": "lost_gods.jpg",
+        "progress": "complete",
+        "year": 2021
+    },
+    {
+        "_id": "613a080798d9d6ab224bd69d",
+        "title": "Stratagem",
+        "author": "Harro von Zenger",
+        "image": "stratagem.jpeg",
+        "progress": "pending",
+        "year": null
+    },
+    {
+        "_id": "613a080798d9d6ab224bd681",
+        "title": "More than 10 stories",
+        "author": "Robert Louis Stevenson",
+        "image": "stevenson.jpeg",
+        "progress": "complete",
+        "year": 2019
+    },
+    {
+        "_id": "613a080798d9d6ab224bd689",
+        "title": "Wimpy Steve Book 8: Snow Much Fun!",
+        "author": "Wimpy Steve",
+        "image": "minecraft8.jpeg",
+        "progress": "complete",
+        "year": 2018
+    },
+    {
+        "_id": "627ba96f2701826f8f175e69",
+        "title": "The Plucker",
+        "author": "Brom",
+        "image": "plucker.jpg",
+        "progress": "complete",
+        "year": 2022
+    },
+    {
+        "_id": "627bade82701826f8f175e79",
+        "title": "The Child Thief",
+        "author": "Brom",
+        "image": "child_thief.jpg",
+        "progress": "complete",
+        "year": 2023
+    },
+    {
+        "_id": "627bae452701826f8f175e7d",
+        "title": "Krampus: The Yule Lord",
+        "author": "Brom",
+        "image": "krampus.jpg",
+        "progress": "complete",
+        "year": 2023
+    },
+    {
+        "_id": "627baeb72701826f8f175e81",
+        "title": "Slewfoot: a Tale of bewitchery",
+        "author": "Brom",
+        "image": "slewfoot.jpg",
+        "progress": "in-progress",
+        "year": null
+    }
+]

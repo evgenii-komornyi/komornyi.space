@@ -1,120 +1,192 @@
-{
-    "projects": [
-        {
-            "id": "1",
-            "name": "Guess My Number",
-            "type": "study",
-            "technologies": ["js"],
-            "imageUrl": "1.png",
-            "link": "https://guess-my-number-dev.netlify.app"
-        },
-        {
-            "id": "2",
-            "name": "Pig Game",
-            "type": "study",
-            "technologies": ["js"],
-            "imageUrl": "2.png",
-            "link": "https://pig-game-dev.netlify.app"
-        },
-        {
-            "id": "3",
-            "name": "Bankist Account",
-            "type": "study",
-            "additionalInfo": "1) login: js, pin: 1111 2) login: jd, pin: 2222",
-            "technologies": ["js"],
-            "imageUrl": "3.png",
-            "link": "https://bankist-account.netlify.app"
-        },
-        {
-            "id": "4",
-            "name": "Bankist Web",
-            "type": "study",
-            "technologies": ["js"],
-            "imageUrl": "4.png",
-            "link": "https://bankist-web.netlify.app/"
-        },
-        {
-            "id": "5",
-            "name": "Mapty",
-            "type": "study",
-            "technologies": ["js"],
-            "imageUrl": "5.png",
-            "link": "https://mapty-dev.netlify.app"
-        },
-        {
-            "id": "6",
-            "name": "Asynchronous Javascript",
-            "type": "study",
-            "technologies": ["js"],
-            "imageUrl": "6.png",
-            "link": "https://asynchronous-javascript.netlify.app"
-        },
-        {
-            "id": "7",
-            "name": "Recipes",
-            "type": "study",
-            "technologies": ["js"],
-            "imageUrl": "7.png",
-            "link": "https://recipes-v1.netlify.app"
-        },
-        {
-            "id": "8",
-            "name": "Ideal Variant Company",
-            "type": "work",
-            "technologies": ["joomla", "html5", "css3", "js"],
-            "imageUrl": "8.png",
-            "link": "http://ideal-variant39.ru"
-        },
-        {
-            "id": "9",
-            "name": "Advocate Service",
-            "type": "work",
-            "technologies": ["wordpress", "html5", "css3", "js"],
-            "imageUrl": "9.png",
-            "link": "http://advokatkleshnya39.ru"
-        },
-        {
-            "id": "10",
-            "name": "Mistral Pawilony Company",
-            "type": "work",
-            "technologies": ["wordpress", "html5", "css3", "js"],
-            "imageUrl": "10.png",
-            "link": "https://mistralpawilon.pl/"
-        },
-        {
-            "id": "11",
-            "name": "My Solo Company",
-            "type": "work",
-            "technologies": ["joomla", "html5", "css3", "js"],
-            "imageUrl": "11.png",
-            "link": "http://mysolo39.ru"
-        },
-        {
-            "id": "12",
-            "name": "TodoList",
-            "type": "study",
-            "technologies": ["js", "react"],
-            "additionalInfo": "React App with Redux and saving todos in the local storage",
-            "imageUrl": "12.png",
-            "link": "https://todolist14062021.netlify.app/"
-        },
-        {
-            "id": "13",
-            "name": "Gatsby Blog",
-            "type": "study",
-            "technologies": ["js", "react"],
-            "additionalInfo": "React Blog using Gatsby and GraphQL technologies",
-            "imageUrl": "13.png",
-            "link": "https://gatsby-blog-reactjs.netlify.app/"
-        },
-        {
-            "id": "14",
-            "name": "Shop",
-            "type": "study",
-            "technologies": ["js", "react"],
-            "additionalInfo": "React Shop using Redux, Firebase, Stripe payment and PWA technologies",
-            "imageUrl": "14.png",
-            "link": "https://crwn-clothing-live2021.herokuapp.com/"
-        }
-    ]
-}
+[
+    {
+        "_id": "6139f35c98d9d6ab224bd66d",
+        "name": "Ideal Variant Company",
+        "type": "work",
+        "technologies": ["Joomla", "HTML5", "CSS3", "Javascript"],
+        "imageUrl": "8.png",
+        "link": "http://ideal-variant39.ru",
+        "additionalInfo": ""
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd66a",
+        "name": "Mapty",
+        "type": "study",
+        "technologies": ["Javascript", "Leaflet Map"],
+        "imageUrl": "5.png",
+        "link": "https://mapty-dev.netlify.app",
+        "additionalInfo": "This application reads coordinates from browser, can create history about user walking or cycling and create marks on the map, and save it to local storage. Only for big screens.",
+        "github": "https://github.com/evgenii-komornyi/mapty"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd66c",
+        "name": "Recipes",
+        "type": "study",
+        "technologies": ["Javascript", "HTML5", "CSS3"],
+        "imageUrl": "7.png",
+        "link": "https://recipes-v1.netlify.app",
+        "additionalInfo": "Recipe application with custom recipe uploads. This project have responsive minimum tablet devices.",
+        "github": "https://github.com/evgenii-komornyi/recipesApp"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd669",
+        "name": "Bankist Web",
+        "type": "study",
+        "technologies": ["Javascript", "HTML5", "CSS3"],
+        "imageUrl": "4.png",
+        "link": "https://bankist-web.netlify.app/",
+        "additionalInfo": "This is a javascript project with ES6 features: such as lazy loading images, modal window, sticky navigation, smooth scroll by page and etc.",
+        "github": "https://github.com/evgenii-komornyi/bankistPage"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd66e",
+        "name": "Advocate Service",
+        "type": "work",
+        "technologies": ["Wordpress", "HTML5", "CSS3", "Javascript"],
+        "imageUrl": "9.png",
+        "link": "",
+        "additionalInfo": ""
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd672",
+        "name": "Gatsby Blog",
+        "type": "study",
+        "technologies": ["Javascript", "ReactJS", "GatsbyJS", "GraphQL"],
+        "additionalInfo": "React Blog using Gatsby and GraphQL technologies",
+        "imageUrl": "13.png",
+        "link": "https://gatsby-blog-reactjs.netlify.app/",
+        "github": "https://github.com/evgenii-komornyi/gatsby_blog"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd671",
+        "name": "TodoList",
+        "type": "study",
+        "technologies": ["Javascript", "ReactJS", "Redux"],
+        "additionalInfo": "React App with Redux and saving todos in the local storage",
+        "imageUrl": "12.png",
+        "link": "https://todolist14062021.netlify.app/",
+        "github": "https://github.com/evgenii-komornyi/todo-app"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd666",
+        "name": "Guess My Number",
+        "type": "study",
+        "technologies": ["Javascript", "Bootstrap"],
+        "imageUrl": "1.png",
+        "link": "https://guess-my-number-dev.netlify.app",
+        "additionalInfo": "This is a Javascript game with Math.random() function.",
+        "github": "https://github.com/evgenii-komornyi/guessMyNumberJS"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd668",
+        "name": "Bankist Account",
+        "type": "study",
+        "additionalInfo": "This is a javascript project with ES6 features: timers, numbers, objects and etc. 1) login: js, pin: 1111 2) login: jd, pin: 2222",
+        "technologies": ["Javascript", "HTML5", "CSS3"],
+        "imageUrl": "3.png",
+        "link": "https://bankist-account.netlify.app",
+        "github": "https://github.com/evgenii-komornyi/bankistUI"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd670",
+        "name": "My Solo Company",
+        "type": "work",
+        "technologies": ["Joomla", "HTML5", "CSS3", "Javascript"],
+        "imageUrl": "11.png",
+        "link": "",
+        "additionalInfo": ""
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd667",
+        "name": "Pig Game",
+        "type": "study",
+        "technologies": ["Javascript", "Bootstrap"],
+        "imageUrl": "2.png",
+        "link": "https://pig-game-dev.netlify.app",
+        "additionalInfo": "This is a javascript game with Math.random() function and the other js basic features.",
+        "github": "https://github.com/evgenii-komornyi/pigGame"
+    },
+    {
+        "_id": "6139f35c98d9d6ab224bd673",
+        "name": "Shop",
+        "type": "study",
+        "technologies": ["Javascript", "ReactJS", "Redux", "Firebase"],
+        "additionalInfo": "React Shop using Redux, Firebase, Stripe payment and PWA technologies",
+        "imageUrl": "14.png",
+        "link": "",
+        "github": "https://github.com/evgenii-komornyi/crwn-clothing"
+    },
+    {
+        "_id": "614896cb155ecf1b9a199949",
+        "name": "Real-Time Chat",
+        "type": "study",
+        "technologies": [
+            "ReactJS",
+            "NodeJS",
+            "ExpressJS",
+            "Socket.io",
+            "HTML5",
+            "CSS3",
+            "MaterialUI"
+        ],
+        "imageUrl": "16.png",
+        "link": "",
+        "additionalInfo": "This app uses NodeJS, ExpressJS, Socket.io and ReactJS. Users can create rooms. ",
+        "github": "https://github.com/evgenii-komornyi/realtime-chat-app"
+    },
+    {
+        "_id": "61a4a8f0db19a4be06623847",
+        "name": "RonisUI",
+        "type": "work",
+        "technologies": [
+            "ReactJS",
+            "Redux",
+            "MaterialUI",
+            "Leaflet Map",
+            "ApexChart"
+        ],
+        "imageUrl": "17.png",
+        "link": "",
+        "additionalInfo": "This UI receives devices telemetry from server via RestAPI and shows charts with parameters history and map with the location history.   "
+    },
+    {
+        "_id": "61dfe933c88221ca4154e5ab",
+        "name": "Cat Owner Simutalor",
+        "type": "study",
+        "technologies": ["ReactJS", "MaterialUI", "Redux"],
+        "imageUrl": "18.png",
+        "link": "https://cat-owner-simulator-alpha1.netlify.app/",
+        "additionalInfo": "This is a simulator. You can adopt the cats and keep them alive and happy.",
+        "github": "https://github.com/evgenii-komornyi/catOwnerSimulator"
+    },
+    {
+        "_id": "633eca2e9c4a5774bc8524a4",
+        "name": "Game of Life",
+        "type": "study",
+        "technologies": [".Net6/C#"],
+        "imageUrl": "19.png",
+        "link": "",
+        "github": "https://github.com/evgenii-komornyi/GameOfLife",
+        "additionalInfo": "This project was created during the Accenture internship."
+    },
+    {
+        "_id": "633ecb609c4a5774bc8524a7",
+        "name": "Savannah Game",
+        "type": "study",
+        "technologies": [".Net6/C#"],
+        "imageUrl": "20.png",
+        "link": "",
+        "github": "https://github.com/evgenii-komornyi/SavannahGame",
+        "additionalInfo": "This project was created during the Accenture internship."
+    },
+    {
+        "_id": "64009808da891ae6ae6eaaf2",
+        "name": "Motivation App",
+        "type": "study",
+        "technologies": ["ReactJS", "React-Native", "Java"],
+        "imageUrl": "21.png",
+        "link": "https://drive.google.com/file/d/12pd4rNMY8ZWgAImglmB5c2rHmhVH2SUz/view?usp=sharing",
+        "github": "https://github.com/evgenii-komornyi/motivations",
+        "additionalInfo": "The Motivation application was created for self-help in unpleasant moments of life. You can add/edit/remove/activate/disactivate phrases, edit/activate/disactivate categories and change images. Widget will show only active pharses and will change randomly per one day. You can download app and backup with phrases to test it by yourself."
+    }
+]

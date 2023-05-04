@@ -1,6 +1,6 @@
 import create from 'zustand';
 
-import { getBooks } from '../api/books';
+import books from '../data/books.json';
 
 import { devtools, persist } from 'zustand/middleware';
 
@@ -8,14 +8,10 @@ const booksStore = set => ({
     books: [],
     isLoaded: false,
 
-    fetchBooks: async (cancelationToken, isCancel) => {
-        try {
-            const { data } = await getBooks(cancelationToken);
-
-            set({ books: data, isLoaded: true });
-        } catch (e) {
-            if (isCancel(e)) return;
-        }
+    fetchBooks: () => {
+        setTimeout(() => {
+            set({ books, isLoaded: true });
+        }, 2000);
     },
 });
 
